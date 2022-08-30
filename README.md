@@ -3,6 +3,32 @@ THIS FILE IS USED TO SET THE CONFIGURATION OF THE ENTIRE WEB APPLICATION
 
 In this file are defined the data that are used in the project.
 
+# Introduction
+This web application organizes its contents into steps and substeps.
+
+## Steps
+A step is somehow like a chapter in a book, has its own title, and it is directly displayed on the Steps bar on the right side of the application.  
+If selected shows its content. Optionally it can also display Popups having additional information.
+
+When the user selects a step the application displays under the step content a button to go to the following step, or substep, this is the main content navigation tool.
+
+Sticking to the book example you can change chapters following the index, but in order to read each paragraph you have to search it through the chapter.
+
+## Substeps
+A substep is somehow like a paragraph, it belongs to a step and has its own content. It has no icon and it is not directly accessible from the right bar of the application.
+Similarly to the step it has a content and can have one or more Popups to show additional content.
+You can access substep content by selecting its parent Step and navigating forwart using the "Next" button, located under the content of the Step.
+
+## Additional steps and substeps features
+
+### Popup
+Both Steps and Substeps can define Popups.
+A Popup is a frame meant to show some html or markdown content. This gives you the freedom to embed images, videos, every type of content.
+Each title has a title and an icon and creates a button on the Step or Substep to open it.
+Each Step / Substep can define more than one Popup. 
+If a Popup is open, opening a different one or changing step causes it to be closed.
+
+### Hotspot
 
 /*
     This is the list of steps and substep defined for the scene
