@@ -211,7 +211,7 @@ export const steps: { [key: string]: Step | Substep } = {
         focalLengthZoomOverride: 40,
         animation: {
             from: 9,
-            to: 14,
+            to: 15,
         },
         hotspots: [
             {
@@ -296,7 +296,7 @@ export const steps: { [key: string]: Step | Substep } = {
         animationPatterns: ['Animation'],
         animation: {
             from: 18,
-            to: 20,
+            to: 21,
         },
         hotspots: [
             {
@@ -387,7 +387,7 @@ export const steps: { [key: string]: Step | Substep } = {
 
         animation: {
             from: 24,
-            to: 24,
+            to: 26,
         },
         hotspots: [
         ]
@@ -406,8 +406,8 @@ export const steps: { [key: string]: Step | Substep } = {
         "focusPointCoordinates": { x: 2, y: 0, z: 1 },
         "animationPatterns": ['Animation'],
         "animation": {
-            "from": 24,
-            "to": 24,
+            "from": 26,
+            "to": 26,
         },
         popups: [],
         focalLengthZoomOverride: 70,
@@ -450,8 +450,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: 1, y: 0, z: 1 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 24,
-            to: 29,
+            from: 26,
+            to: 32,
         },
         hotspots: []
     },
@@ -481,8 +481,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: 1, y: 0, z: 1 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 29,
-            to: 29,
+            from: 32,
+            to: 34,
         },
         hotspots: []
     },
@@ -520,8 +520,8 @@ export const steps: { [key: string]: Step | Substep } = {
         "focusPointCoordinates": { x: -3, y: 0, z: 0 },
         "animationPatterns": ['Animation'],
         "animation": {
-            "from": 29,
-            "to": 30,
+            "from": 34,
+            "to": 34,
         },
         popups: [
             {
@@ -568,8 +568,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 30,
-            to: 45,
+            from: 34,
+            to: 49,
         },
         hotspots: [
             {
@@ -605,8 +605,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 45,
-            to: 48,
+            from: 49,
+            to: 52,
         },
         hotspots: [
             {
@@ -642,8 +642,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 48,
-            to: 51,
+            from: 52,
+            to: 55,
         },
         hotspots: [
             {
@@ -681,8 +681,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 51,
-            to: 54,
+            from: 55,
+            to: 58,
         },
         hotspots: [
             {
@@ -719,8 +719,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 54,
-            to: 57,
+            from: 58,
+            to: 61,
         },
         hotspots: [
             {
@@ -760,8 +760,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 57,
-            to: 66,
+            from: 61,
+            to: 70,
         },
         hotspots: [
             {
@@ -797,8 +797,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 66,
-            to: 69,
+            from: 70,
+            to: 73,
         },
         hotspots: [
             {
@@ -837,8 +837,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 69,
-            to: 75,
+            from: 73,
+            to: 79,
         },
         hotspots: [
             {
@@ -854,7 +854,7 @@ export const steps: { [key: string]: Step | Substep } = {
         contentHtml: `
             <h4>Step 3.9</h4>
             <p>
-            Let's move on to the Push-Button
+            Let's move on to the Push-Button.
             This Push-Button goes to the place on the board labeled PB1.
 
             Solder.
@@ -875,8 +875,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 75,
-            to: 78,
+            from: 79,
+            to: 82,
         },
         hotspots: [
             {
@@ -913,8 +913,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 78,
-            to: 81,
+            from: 82,
+            to: 85,
         },
         hotspots: [
             {
@@ -951,8 +951,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 81,
-            to: 84,
+            from: 85,
+            to: 88,
         },
         hotspots: [
             {
@@ -989,8 +989,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 84,
-            to: 87,
+            from: 88,
+            to: 91,
         },
         hotspots: [
             {
@@ -1027,8 +1027,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 87,
-            to: 93,
+            from: 91,
+            to: 97,
         },
         hotspots: [
             {
@@ -1067,8 +1067,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 93,
-            to: 111,
+            from: 97,
+            to: 115,
         },
         hotspots: [
             {
@@ -1105,8 +1105,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 111,
-            to: 114,
+            from: 115,
+            to: 118,
         },
         hotspots: [
             {
@@ -1143,8 +1143,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 114,
-            to: 117,
+            from: 118,
+            to: 121,
         },
         hotspots: [
             {
@@ -1185,8 +1185,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 117,
-            to: 123,
+            from: 121,
+            to: 127,
         },
         hotspots: [
             {
@@ -1228,8 +1228,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 123,
-            to: 126,
+            from: 127,
+            to: 130,
         },
         hotspots: [
             {
@@ -1266,8 +1266,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 126,
-            to: 129,
+            from: 130,
+            to: 133,
         },
         hotspots: [
             {
@@ -1304,8 +1304,8 @@ export const steps: { [key: string]: Step | Substep } = {
         focusPointCoordinates: { x: -3, y: 0, z: 0 },
         animationPatterns: ['Animation'],
         animation: {
-            from: 129,
-            to: 131,
+            from: 133,
+            to: 135,
         },
         hotspots: [
             {
