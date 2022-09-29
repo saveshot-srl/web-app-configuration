@@ -30,8 +30,9 @@ export const steps: { [key: string]: Step | Substep } = {
         //     <img style="width: 220px;" src="Step1.0.jpg"/>
         // `,
         contentMD: `
-            ### Required tools:  
+            ### Required tools: 
             Place all the components of bag No.1 & 2 on your desk.  
+
         `,
         // icon: 'tool.png', // icona: path relativo a public. Questo file è public/components/connector.jpg
         iconName: '1', //   se non c'è l'icona viene mostrato questo, altrimenti questo diventa l'alt dell'icona
@@ -97,7 +98,9 @@ export const steps: { [key: string]: Step | Substep } = {
         On the right side of your board we have designed a test sheet for your first soldering gig. 
 
         Practice your soldering skills by filling the holes that make a heart-shape with solder, until you feel comfortable doing the real thing.
+
         You'll want to be **feeding** the solder into the soldering iron by slowly pushing it towards the iron once it starts smelting.
+
 
         For more information about how to solder, click the tooltip above.
         `,
@@ -135,6 +138,7 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 1.3
         Start with the first 1k Ohm resistor, color coded Brown-Black-Red | Gold.
 
+
         ![1kOhm](assets/1kOhm.png)
         
             The colored bands on a resistor represents the resistance of your component, and can be read from left to right.
@@ -147,9 +151,11 @@ export const steps: { [key: string]: Step | Substep } = {
             This resistor is to be placed at the location  labeled R1 1k.
             Remove the tape at both ends of the resistors leads, bend them and insert the resistor
             into its designated spot on the circuit board. Orientation is not important.
+
             Once the resistor is in place, it helps to slightly bend the leads outwards to hold the component in place.
             Now solder the resistor to the board using the procedure you learned in Step 1.2, and cut the legs from the component.
             Once a component is in place, you should generally cut the legs unless explicitly told otherwise.
+
         `,
         popups: [
             {
@@ -192,6 +198,7 @@ export const steps: { [key: string]: Step | Substep } = {
            
         Now let's mount the 10kOhm R2 (Brown-Black-Orange Gold).
         Place them in the spot labeled R2 10k. 
+
 
 
         ![10kOhm](assets/10kOhm.png)
@@ -296,6 +303,7 @@ export const steps: { [key: string]: Step | Substep } = {
 
             On the board we have a negative label (-). Insert the negative lead in the hole labeled “-”.
 
+
             Then solder it to the board.
             
             `,
@@ -378,6 +386,7 @@ export const steps: { [key: string]: Step | Substep } = {
         Congratulations! You have completed your first solder experience.
 
         Detach it from the PCB by twisting it, and you've got yourself a brand new Arduino keychain!
+
         `,
         popups: [
             {
@@ -440,7 +449,9 @@ export const steps: { [key: string]: Step | Substep } = {
         
         Take the 1 Kohm R4 resistor (brown, black and red) and mount it on the PCB, flip the board over and solder the resistor to the board.
 
+
         ![1kOhm](assets/1kOhm.png)
+
 
         Now on to the Yellow LED. 
         
@@ -449,7 +460,9 @@ export const steps: { [key: string]: Step | Substep } = {
 
         Now Solder the cables, insert the red cable in the label + and solder. Then solder the black cable to the hole labelled -.
 
+
         If you're having a hard time getting the cables through the holes in the pcb you may find it helpful to twist the tip of the cable before trying to insert it. 
+
         `,
         popups: [
             {
@@ -571,11 +584,13 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.1
         Grab 5 1k Ohm resistors (brown, black, red, gold).
 
+
         ![1kOhm](assets/1kOhm.png)
 
-        These resistors goes in the positions on the board labeled R5, R6, R7, R8 and R11 1k Ohm. First remove the tape on both of them ends of the resistor leads. Then, bend over the legs of the resistor and insert it
+        These resistors go in the positions on the board labeled R5, R6, R7, R8 and R11 1k Ohm. First remove the tape on both of them ends of the resistor leads. Then, bend over the legs of the resistor and insert it
 
         Once the resistors are in place, it helps to bend them slightly outwards so that the side does not fall off.
+
 
         Flip the board over, solder and cut the excess leads exactly like you did on the other circuits.
         `,
@@ -616,6 +631,7 @@ export const steps: { [key: string]: Step | Substep } = {
         Grab one 10kOhm resistor (brown, black, orange, gold).
         This resistor goes to the place on the board labeled R9, 10kOhm. 
 
+
         ![10kOhm](assets/10kOhm.png)
 
         Flip the board over, solder, and cut.
@@ -654,6 +670,7 @@ export const steps: { [key: string]: Step | Substep } = {
         Grab a 1MOhm resistor (brown, black, green, gold) to populate the last empty resistorslot.
 
         ![1MOhm](assets/1MOhm.png)
+
 
         This resistor goes to the place on the board labeled R10, 1MOhm. 
 
@@ -769,6 +786,7 @@ export const steps: { [key: string]: Step | Substep } = {
 
         The long leg is known as the Anode and is the positive (+) lead.
         The short leg is known as the Cathode and is the negative (-) lead.
+
 
         Put the LEDs through the holes marked LD2, LD3, LD4.
 
@@ -886,6 +904,7 @@ export const steps: { [key: string]: Step | Substep } = {
         Let's move on to the push-button.
 
         This push-button goes in the position on the board labeled PB1.
+
 
         Solder the legs of the push-button to the board.
         `,
@@ -1117,8 +1136,8 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
             #### Step 3.15
             Now we can solder the LDO 5v. It goes in the position marked U3. 
-
             Push the legs through the holes in the PCB, then gently bend the component so that it is flush against the PCB, and the hole in the component lines up with the hole in the PCB. 
+
 
             Then solder the LDO to the board.
         `,
@@ -1310,8 +1329,8 @@ export const steps: { [key: string]: Step | Substep } = {
             Lastly, we can insert the ATMEGA328P microcontroller into the socket into the socket mounted just a few steps ago. This is the brain of your board and it is important it is mounted in the right direction. 
             
             The direction of the microcontroller is indicated by a semi-circle on one end of the component. Orient it so the semi-circle faces away from the board.
-
             Congratulations! You have now completed the assembly of your own Arduino UNO! Find a USB-C cable, plug it in to your computer and make sure everything is working. Go back to the Make Your UNO page and follow the instruction there to test your board.
+
         `,
         popups: [
             {
