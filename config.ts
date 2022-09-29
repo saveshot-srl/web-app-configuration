@@ -134,6 +134,8 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
         #### Step 1.3
         Start with the first 1k Ohm resistor, color coded Brown-Black-Red | Gold.
+
+        ![1kOhm](1kOhm.png)
         
             The colored bands on a resistor represents the resistance of your component, and can be read from left to right.
            
@@ -191,10 +193,16 @@ export const steps: { [key: string]: Step | Substep } = {
         Now let's mount the 10kOhm R2 (Brown-Black-Orange Gold).
         Place them in the spot labeled R2 10k. 
 
+
+        ![10kOhm](10kOhm.png)
+
         Solder it to the board like you did in the previous step.
     
         You only have one resistor left to solder, and it is R3 1MOhm (Brown, black, green, gold).
         This resistor occupies the spot labeled R3 1M. 
+
+
+        ![1MOhm](1MOhm.png)
 
         Solder it to the board, cut the legs, and then you can move on to the next step.
         `,
@@ -432,6 +440,8 @@ export const steps: { [key: string]: Step | Substep } = {
         
         Take the 1 Kohm R4 resistor (brown, black and red) and mount it on the PCB, flip the board over and solder the resistor to the board.
 
+        ![1kOhm](1kOhm.png)
+
         Now on to the Yellow LED. 
         
         Note that LEDs are polarized components, meaning that the direction of the LED leads matters as current can only flow in one direction. 
@@ -561,6 +571,8 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.1
         Grab 5 1k Ohm resistors (brown, black, red, gold).
 
+        ![1kOhm](1kOhm.png)
+
         These resistors goes in the positions on the board labeled R5, R6, R7, R8 and R11 1k Ohm. First remove the tape on both of them ends of the resistor leads. Then, bend over the legs of the resistor and insert it
 
         Once the resistors are in place, it helps to bend them slightly outwards so that the side does not fall off.
@@ -604,6 +616,8 @@ export const steps: { [key: string]: Step | Substep } = {
         Grab one 10kOhm resistor (brown, black, orange, gold).
         This resistor goes to the place on the board labeled R9, 10kOhm. 
 
+        ![10kOhm](10kOhm.png)
+
         Flip the board over, solder, and cut.
         `,
         popups: [
@@ -638,6 +652,8 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD:`
         #### Step 3.3
         Grab a 1MOhm resistor (brown, black, green, gold) to populate the last empty resistorslot.
+
+        ![1MOhm](1MOhm.png)
 
         This resistor goes to the place on the board labeled R10, 1MOhm. 
 
