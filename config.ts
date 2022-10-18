@@ -22,7 +22,7 @@ type Substep = StepBase & { isSubstep: true }
 // Hotspot presnti nella scena e loro proprietà
 export const steps: { [key: string]: Step | Substep } = {
     "step1": { // id hotspot, per ora li chiamiamo hotspot1, hotspot2, hotspot3, ecc
-        name: 'Required tools', // nome dell'hotspot: questo compare sia sulla barra degli hotspot sotto che sull'hotspot stesso quando è selezionato
+        name: 'Keychain', // nome dell'hotspot: questo compare sia sulla barra degli hotspot sotto che sull'hotspot stesso quando è selezionato
         // contentHtml: `
         //     <h4>Required tools</h4>
         //     <p> Place all the components of sachet No.1 on
@@ -31,9 +31,7 @@ export const steps: { [key: string]: Step | Substep } = {
         // `,
         contentMD: `
             ### Required tools:  
-            Place all the components of sachet No.1 on your desk  
-
-            ![img](Step1.0.jpg)
+            Place all the components of bag No.2 & 4 on your desk  
         `,
         // icon: 'tool.png', // icona: path relativo a public. Questo file è public/components/connector.jpg
         iconName: '1', //   se non c'è l'icona viene mostrato questo, altrimenti questo diventa l'alt dell'icona
@@ -49,7 +47,7 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Required Tools',
                 icon: 'tool.png',
-                autoOpen: true,
+                autoOpen: false,
                 // contentHtml: `
                 //     <p>WHAT YOU NEED TO ASSEMBLE A KIT</p>
                 //     <ul>
@@ -69,7 +67,6 @@ export const steps: { [key: string]: Step | Substep } = {
                     - Flush Cutter
                     - Safety Glasses
                     - Battery
-
                     ![img](tools-img.png)
                 `
             }
@@ -79,10 +76,9 @@ export const steps: { [key: string]: Step | Substep } = {
     'step1.1': {
         name: '1.1',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 1.1</h4>
-            <p> Turn your soldering iron on at 400° (or 763°F) </p>
-            <img style="width: 220px;" src="Step1.1.jpg"/>
+        contentMD:`
+        #### Step 1.1
+        Turn your soldering iron on at 400°C (or 763 °F)
         `,
         focusPointCoordinates: { x: 0, y: 0, z: 0 },
         animationPatterns: ['Animation'],
@@ -95,11 +91,11 @@ export const steps: { [key: string]: Step | Substep } = {
     'step1.2': {
         name: '1.2',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 1.2</h4>
-            <p> On the right side of your board we have
-            designed a test sheet for your first solder.
-            Dissolve some lead with iron. </p>
+        contentMD: `
+        #### Step 1.2
+        On the right side of your board we have designed a test sheet for your first soldering gig. 
+        Practice your soldering skills by filling the holes that make a heart-shape with solder, until you feel comfortable doing the real thing.
+        For more information about how to solder, click the tooltip above.
         `,
         popups: [
             {
@@ -167,18 +163,24 @@ export const steps: { [key: string]: Step | Substep } = {
     'step1.3': {
         name: '1.3',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 1.3</h4>
-            <p> Start with the first 1k Ohm resistor, color coded Brown-Black-Red | Gold.
-                <br/>
-                Brown = 1, Black = 0, Red x 100 =  10  X 100 = 1000.
-                This resistor is to be placed at the location  labeled R1 1k.
-                Remove the tape at both ends of the resistor’s leads, bend them and insert the resistor
-                into its designated spot on the circuit board. Orientation is not important.
-                Once the resistor is in place, it helps
-                To slightly bend the leads outwards to hold the component in place.
-                Now solder the resistor using the procedure you learned in Step 1.2
-            </p>
+        contentMD: `
+        #### Step 1.3
+        Start with the first 1k Ohm resistor, color coded Brown-Black-Red | Gold.
+        
+            The colored bands on a resistor represents the resistance of your component, and can be read from left to right.
+           
+            The first two or three bands represent single digits. Brown = 1, black = 0, read it from left to right and you get 10.
+            The third or fourth band is a multiplier. Red tells you to multiply by 100: 
+         
+            10 * 100 = 1000.
+         
+            This resistor is to be placed at the location  labeled R1 1k.
+            Remove the tape at both ends of the resistors leads, bend them and insert the resistor
+            into its designated spot on the circuit board. Orientation is not important.
+            Once the resistor is in place, it helps
+            To slightly bend the leads outwards to hold the component in place.
+            Now solder the resistor using the procedure you learned in Step 1.2
+       
         `,
         popups: [
             {
@@ -265,17 +267,16 @@ export const steps: { [key: string]: Step | Substep } = {
     'step1.4': {
         name: '1.4',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 1.4</h4>
-            <p>
-            Now let's mount the 10kOhm R2 (Brown-Black-Orange Gold).
-            Place them in the spot labeled R2 10k. 
-            Follow the process in Step 1.3
-            <br/>
-            You only have one resistor left to solder and it’s R3 1MOhm (Brown-Black-Green Gold).
-            This resistor occupies the spot labeled R3 1M. 
-            Repeat what you did in Step 1.3
-            </p>
+        contentMD:`
+        #### Step 1.4
+           
+        Now let's mount the 10kOhm R2 (Brown-Black-Orange Gold).
+        Place them in the spot labeled R2 10k. 
+        Solder it to the board like you did in the previous step.
+    
+        You only have one resistor left to solder, and it is R3 1MOhm (Brown, black, green, gold).
+        This resistor occupies the spot labeled R3 1M. 
+        Solder it to the board, and then you can move on to the next step.
         `,
         popups: [
             {
@@ -309,16 +310,16 @@ export const steps: { [key: string]: Step | Substep } = {
     'step1.5': {
         name: '1.5',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 1.5</h4>
-            <p>
-            Now let's move on to your capacitors, the first is a 22pF (picoFarad) yellow capacitor.
-            This capacitor goes to the place on the board labeled C1 22pF.
-            First remove the tape from both ends of the capacitor’ leads, then insert it
-            In the correct spot on the circuit board.
-            Once the capacitor is in place, it helps
-            bending the leads slightly outwards to prevent the component from falling off. Solder the two leads using the steps you learned in Step 1.3
-            </p>
+        contentMD:`
+        #### Step 1.5
+      
+        Let's move on to your capacitors, the first is a 22pF (picoFarad) yellow capacitor.
+        This capacitor goes to the place on the board labeled C1 22pF.
+        First remove the tape from both ends of the capacitors leads, then insert it
+        in its spot on the circuit board.
+        Once the capacitor is in place, it helps to bend the leads slightly outwards to prevent the component from falling off. 
+        Solder the two leads to the board using what you have learned so far.
+      
         `,
         popups: [
             {
@@ -352,16 +353,17 @@ export const steps: { [key: string]: Step | Substep } = {
     'step1.6': {
         name: '1.6',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 1.6</h4>
-            <p>
-                Everything should now look nice and tidy.
-                Let's now solder our first electrolytic capacitor C2. This capacitor is polarized (47uF/25V),
-                hence on the component’s body you can identify a negative and positive label.
-                On the board we have a positive label (+).
-                Respect the drawing by inserting the positive lead in the hole labeled “+”.
-            </p>
-        `,
+        contentMD: ` 
+            #### Step 1.6
+            Let's now solder our first electrolytic capacitor C2. This capacitor is polarized (47uF/25V), meaning that 
+            the direction you place it in matters.
+            
+            On the body of the component you can identify a negative and positive label, the negative side is indicated by a 
+            white stripe on the body of the component.
+            On the board we have a positive label (+). Insert the positive lead in the hole labeled “+”.
+            Then solder it to the board.
+            
+            `,
         popups: [
             {
                 title: 'Step by Step',
@@ -394,17 +396,15 @@ export const steps: { [key: string]: Step | Substep } = {
     'step1.7': {
         name: '1.7',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 1.7</h4>
-            <p>
-            We can now solder the second 100nF (nanoFarad) capacitor, which is blue.
-            This capacitor goes to the place on the board labeled C3 100nF.
-            
-            First remove the tape at both ends of the capacitor’s leads, then insert it his home on the circuit board.
-            Once the capacitor is in place, it helps
-            bend them slightly outwards so that the side does not fall. Now weld the two
-            leads using the steps you learned about the Step 1.3
-            </p>
+        contentMD: `
+        #### Step 1.7
+        
+        We can now solder the second 100nF (nanoFarad) capacitor, which is blue.
+        This capacitor goes to the place on the board labeled C3 100nF.
+        
+        First remove the tape at both ends of the capacitors leads, then insert it his home on the circuit board.
+        Once the capacitor is in place, it helps to bend them slightly outwards so that the side does not fall. 
+        Now solder the two leads to the board using what you have learned so far.
         `,
         popups: [
             {
@@ -436,15 +436,14 @@ export const steps: { [key: string]: Step | Substep } = {
     'step1.8': {
         name: '1.8',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 1.8</h4>
-            <p>
-            WOW! you have completed your solder experience.
-
-            Now we can clean the board. (the tin contains flux that stains your Board), don't worry!
-            Take a sheet of absorbent paper, a toothbrush and Alcohol,
-            wet the Board and FORTE brush without fear on both the TOP and BOTTOM sides.
-            </p>
+        contentMD:`
+        #### Step 1.8
+        
+        Congratulations! You have completed your first solder experience.
+        Now we can clean the board. The solder contains flux that stains your board, but don't worry! It comes off easily!
+        Take a sheet of absorbent paper, a toothbrush, and isopropyl alcohol,
+        wet the Board and brush fearlessly on both the TOP and BOTTOM sides.
+        Once it is clean, detach it from the PCB by twisting it, and you've got yourself a brand new Arduino keychain!
         `,
         popups: [
             {
@@ -480,11 +479,12 @@ export const steps: { [key: string]: Step | Substep } = {
     "step2": {
         name: 'DEBUG circuit',
         isSubstep: false,
-        contentHtml: `
-            <h4>Step 2.0</h4>
-            <p>
-            Congratulations you can now solder your first DEBUG circuit. This PCB is equipped with a resistor, a LED and a pair of cables.
-            </p>
+        contentMD:`
+        #### Step 2.0
+        
+        You can now solder your first debug circuit. This PCB is equipped with a resistor, a LED and a pair of cables.
+        
+        Once you've completed your UNO board, you can use this circuit to easily test the pin connections to verify that everything is working as it should.
         `,
         iconName: '2',
         //"icon": 'next.jpg',
@@ -501,15 +501,15 @@ export const steps: { [key: string]: Step | Substep } = {
     'step2.1': {
         name: '2.1',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 2.1</h4>
-            <p>
-            Take the 1 Kohm R4 resistor (brown, black and red) mounted as Step 1.3
-
-            Now for the LED Yellow. Note the direction of the LED leads does matter. The long leg is known as the Anode and is the positive (+) lead. The short leg is known as the Cathode and is the negative (-) lead. Put the first LED through the holes marked DL1.
-
-            Now Solder the cables, insert the red cable in the label + and solder. Repeat for the black cable.
-            </p>
+        contentMD:`
+        #### Step 2.1
+        
+        Take the 1 Kohm R4 resistor (brown, black and red) and mount it on the PCB, flip the board over and solder the resistor to the board.
+        Now on to the Yellow LED. 
+        
+        Note that LEDs are polarized components, meaning that the direction of the LED leads matters as current can only flow in one direction. 
+        The long leg is known as the Anode and is the positive (+) lead. The short leg is known as the Cathode and is the negative (-) lead. Put the LED leads through the holes marked LD1, and solder them to the board.
+        Now Solder the cables, insert the red cable in the label + and solder. Then solder the black cable to the hole labelled -.
         `,
         popups: [
             {
@@ -543,12 +543,12 @@ export const steps: { [key: string]: Step | Substep } = {
     'step2.2': {
         name: '2.2',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 2.2</h4>
-            <p>
-            Well! 
-            Now you have completed your first circuit, you can detach the board by simply turning the PCB.
-            </p>
+        contentMD:`
+        #### Step 2.2
+        Well done! 
+        You have now completed your debug circuit, you can detach the board by twisting the PCB.
+        
+        Grab a battery, and touch the ends of the wires to the poles of the battery, to make sure that the LED lights up, then put it aside for later.
         `,
         popups: [
             {
@@ -572,41 +572,40 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: []
     },
     "step3": {
-        "name": 'UNO assembling',
-        "isSubstep": false,
-        "contentHtml": `
-            <h4>Step 3.0</h4>
-            <p>
-            1 x PCB ASX00040<br/>
-            7 x Resistor<br/>
-            1 x Diodes<br/>
-            1 x CRYSTAL 16MHz<br/>
-            2 x Capacitors 22pF<br/>
-            4 x Leds<br/>
-            1 x Push-Button<br/>
-            1 x PCB USB_C Serial<br/>
-            1 x Mosfet<br/>
-            1 x LDO 3,3v<br/>
-            2 x Capacitors Electrolytic<br/>
-            1 x LDO 5v<br/>
-            6 x Cap 100nF<br/>
-            1 x Socket U1 Atmega 328p<br/>
-            2 x connectors I/O <br/>
-            1 x Connector ICPS<br/>
-            1 x Power Jacks<br/>
-            1 x Micro ATmega 328p<br/><br/>
-
-            Follow this order for correct assembly.
-            </p>
+        name: 'UNO assembly',
+        isSubstep: false,
+        contentMD:`
+        #### Step 3.0
+        To assemble your Arduino UNO board, you will require the following components:
+        - 1 x PCB ASX00040
+        - 7 x Resistor
+        - 1 x Diodes
+        - 1 x CRYSTAL 16MHz
+        - 2 x Capacitors 22pF
+        - 4 x LEDs
+        - 1 x Push-Button
+        - 1 x PCB USB_C Serial
+        - 1 x Mosfet
+        - 1 x LDO 3,3v
+        - 2 x Capacitors Electrolytic
+        - 1 x LDO 5v
+        - 6 x Cap 100nF
+        - 1 x Socket U1 Atmega 328p
+        - 2 x connectors I/O 
+        - 1 x Connector ICPS
+        - 1 x Power Jacks
+        - 1 x Microcontroller ATmega 328p
+        Follow these steps to make sure the process is as easy as possible.
+        
         `,
-        "iconName": '3',
+        iconName: '3',
         //"icon": 'next.jpg',
         focalLengthZoomOverride: 70,
-        "focusPointCoordinates": { x: -2.5, y: 0, z: 1 },
-        "animationPatterns": ['Animation'],
-        "animation": {
-            "from": 34,
-            "to": 34,
+        focusPointCoordinates: { x: -2.5, y: 0, z: 1 },
+        animationPatterns: ['Animation'],
+        animation: {
+            from: 34,
+            to: 34,
         },
         popups: [
             {
@@ -625,15 +624,12 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.1': {
         name: '3.1',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.1</h4>
-            <p>
-            These resistances goes to the place on the board labeled R5, R6, R7, R8 and R11 1k Ohm. First remove the tape on both of them ends of the resistor leads. Then, bend over the legs of the resistor and insert it
-            his home on the circuit.
-            Once the resistance is in place, it helps bend them slightly outwards so that the side does not fall off.
-
-            Solder and cut same Step 1.3
-            </p>
+        contentMD:`
+        #### Step 3.1
+        Grab 5 1k Ohm resistors (brown, black, red, gold).
+        These resistors goes in the positions on the board labeled R5, R6, R7, R8 and R11 1k Ohm. First remove the tape on both of them ends of the resistor leads. Then, bend over the legs of the resistor and insert it
+        Once the resistors are in place, it helps to bend them slightly outwards so that the side does not fall off.
+        Flip the board over, solder and cut the excess leads exactly like you did on the other circuits.
         `,
         popups: [
             {
@@ -667,13 +663,11 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.2': {
         name: '3.2',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.2</h4>
-            <p>
-            This resistor goes to the place on the board labeled R9, 10kOhm. 
-
-            Solder and cut same Step 1.3
-            </p>
+        contentMD:`
+        #### Step 3.2
+        Grab one 10kOhm resistor (brown, black, orange, gold).
+        This resistor goes to the place on the board labeled R9, 10kOhm. 
+        Flip the board over, solder, and cut.
         `,
         popups: [
             {
@@ -704,13 +698,12 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.3': {
         name: '3.3',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.3</h4>
-            <p>
-            This resistor goes to the place on the board labeled R10, 10kOhm. 
-
-            Solder and cut same Step 1.3
-            </p>
+        contentMD:`
+        #### Step 3.3
+        Grab a 1MOhm resistor (brown, black, green, gold) to populate the last empty resistorslot.
+        This resistor goes to the place on the board labeled R10, 1MOhm. 
+        For one last resistor - flip the board over, solder, and cut.
+        
         `,
         popups: [
             {
@@ -741,13 +734,10 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.4': {
         name: '3.4',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.4</h4>
-            <p>
-            Now we solder the D1 Diode, this is a polarized component, the Diode has a white band Anode (+) Cathode (-), the white band is indicated on the board label. 
-
-            Solder and cut same Step 1.3
-            </p>
+        contentMD:`
+        #### Step 3.4
+        
+        Now we solder the D1 Diode. This is, like an LED, a polarized component. The Diode has a white band, line up the white band on the component with the white mark on the PCB and solder it down to ensure the diode is mounted in the right direction.
         `,
         popups: [
             {
@@ -780,13 +770,11 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.5': {
         name: '3.5',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.5</h4>
-            <p>
-            Now we solder the Y1 CRYSTAL 16MHz.
-
-            Solder and cut same Step 1.3
-            </p>
+        contentMD:`
+        #### Step 3.5
+        
+        Now, mount the 16MHz crystal in the Y1 position.
+        Flip the board over and solder the crystal to the board.
         `,
         popups: [
             {
@@ -818,16 +806,15 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.6': {
         name: '3.6',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.6</h4>
-            <p>
-            Now for the LEDs LD2, LD3, LD4 yellow. Note the direction of the LED leads does matter.
-            The long leg is known as the Anode and is the positive (+) lead.
-            The short leg is known as the Cathode and is the negative (-) lead.
-            Put the first LED through the holes marked LD2, LD3, LD4.
-
-            Solder and cut same Step 1.3
-            </p>
+        contentMD:`
+        #### Step 3.6
+        
+        Now for the LEDs LD2, LD3, LD4 which should be yellow. Note the direction of the LED leads does matter.
+        The long leg is known as the Anode and is the positive (+) lead.
+        The short leg is known as the Cathode and is the negative (-) lead.
+        Put the LEDs through the holes marked LD2, LD3, LD4.
+        Solder the leads to the board.
+        
         `,
         popups: [
             {
@@ -859,13 +846,11 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.7': {
         name: '3.7',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.7</h4>
-            <p>
-            Now for the LD4 Green. Note the direction of the LED leads does matter. The long leg is known as the Anode and is the positive (+) lead. The short leg is known as the Cathode and is the negative (-) lead. Put the first LED through the holes marked DL4.
-
-            Solder and cut same Step 1.3
-            </p>
+        contentMD:`
+        #### Step 3.7
+        
+        Now for the green LED, going in slot LD5. Grab the LED and put the leads through the holes marked LD5.
+        Then solder the LED to the board.
         `,
         popups: [
             {
@@ -896,15 +881,12 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.8': {
         name: '3.8',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.8</h4>
-            <p>
-            Now let's move on to your capacitors, they are 22pF (picofarad) yellow capacitors.
-            This capacitor goes to the place on the board labeled C4 and C5.
-
-            Solder and cut same Step 1.3
-
-            </p>
+        contentMD:`
+        #### Step 3.8
+        
+        Now let's move on to your capacitors, they are 22pF yellow capacitors.
+        These capacitors go in the positions on the board labeled C4 and C5.
+        Solder the capacitors to the board.
         `,
         popups: [
             {
@@ -936,14 +918,12 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.9': {
         name: '3.9',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.9</h4>
-            <p>
-            Let's move on to the Push-Button.
-            This Push-Button goes to the place on the board labeled PB1.
-
-            Solder.
-            </p>
+        contentMD:`
+        #### Step 3.9
+        
+        Let's move on to the push-button.
+        This push-button goes in the position on the board labeled PB1.
+        Solder the legs of the push-button to the board.
         `,
         popups: [
             {
@@ -974,13 +954,12 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.10': {
         name: '3.10',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.10</h4>
-            <p>
-            Let's move on to the PCB USB-Serial.
-
-            Solder and Cut same Step 1.3
-            </p>
+        contentMD:`
+        #### Step 3.10
+        Let's move on to the PCB USB-Serial. 
+        
+        Push it down with the USB-C port facing away from the board.
+        Solder it to the board, then carefully cut the legs. 
         `,
         popups: [
             {
@@ -1012,13 +991,15 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.11': {
         name: '3.11',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.11</h4>
-            <p>
-            Let's move on to the Mosfet.
-
-            Solder and Cut same Step 1.3
-            </p>
+        contentMD:`
+        #### Step 3.11
+        
+        Let's move on to the Mosfet. 
+        
+        Grab it and push it into the slot marked Q1. This component is non-reversible and needs to go into the board in a specific direction. 
+        
+        One of the Mosfets sides is flat, match that side with the flat edge on the PCBs drawing.
+        Then solder it to the board.
         `,
         popups: [
             {
@@ -1050,13 +1031,16 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.12': {
         name: '3.12',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.12</h4>
-            <p>
-            Let's move on to the LDO.
-
-            Solder and Cut same Step 1.3
-            </p>
+        contentMD:`
+        #### Step 3.12
+        
+        Let's move on to the LDO. 
+        
+        The LDO is going into the slot marked U2. 
+        
+        This component is also non-reversible, and also has a flat edge 
+        that you can use for alignment. 
+        Push it down, and solder it to the board.
         `,
         popups: [
             {
@@ -1088,13 +1072,11 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.13': {
         name: '3.13',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.13</h4>
-            <p>
-            We now solder the electrolytic capacitors C6-C7. This capacitor is polarized (47uF / 25V), so on the capacitor we read a negative and positive label, on the board we have a positive label, respect the drawing by inserting the positive in the + label.
-
-            Solder and Cut same Step 1.3
-            </p>
+        contentMD:`
+        #### Step 3.13
+        
+        We can now mount the electrolytic capacitors that go in C6 & C7. These capacitors are polarized (47uF / 25V), The negative side is indicated by a white stripe on the body of the capacitor.
+        Correctly orient them using the indication on the body, and then solder them to the board.
         `,
         popups: [
             {
@@ -1126,15 +1108,11 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.14': {
         name: '3.14',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.14</h4>
-            <p>
-            Now we can solder the BLUE 100nF (nanoFarad) capacitors.
-
-            These capacitors go to the place on the board labeled C8, C9, C10, C11, C12, C13.
-
-            Solder and Cut same Step 1.3
-            </p>
+        contentMD: `
+        #### Step 3.14
+        Now we can mount the blue 100nF capacitors.
+        These capacitors go in the positions on the board marked C8, C9, C10, C11, C12, C13.
+        Solder them to the board.
         `,
         popups: [
             {
@@ -1166,13 +1144,11 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.15': {
         name: '3.15',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.15</h4>
-            <p>
-            Now we can solder the LDO 5v. 
-
-            Solder and Cut same Step 1.3
-            </p>
+        contentMD: `
+            #### Step 3.15
+            Now we can solder the LDO 5v. It goes in the position marked U3. 
+            Push the legs through the holes in the PCB, then gently bend the component so that it is flush against the PCB, and the hole in the component lines up with the hole in the PCB. 
+            Then solder the LDO to the board.
         `,
         popups: [
             {
@@ -1204,13 +1180,10 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.16': {
         name: '3.16',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.16</h4>
-            <p>
-            Now we can solder Socket U1 
-
-            Solder.
-            </p>
+        contentMD: `
+        #### Step 3.16
+        Now we can solder the socket for the ATMEGA328P, that goes in the position marked U1.
+        Push it in place then solder the legs one by one. 
         `,
         popups: [
             {
@@ -1242,13 +1215,10 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.17': {
         name: '3.17',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.17</h4>
-            <p>
-            Now we can solder Connectors. 
-
-            Solder.
-            </p>
+        contentMD: `
+        #### Step 3.17
+        Now we can mount the pin connectors. 
+        Push them into their respective positions, J2 & J3, then solder them to the board.
         `,
         popups: [
             {
@@ -1289,13 +1259,10 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.18': {
         name: '3.18',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.18</h4>
-            <p>
-            Now we can solder Connector ICPS.
-
-            Solder.
-            </p>
+        contentMD: `
+            #### Step 3.18
+            Now we can mount the ICSP headers. On the PCB the position is marked J1.
+            Push it into position then solder the component to the board.     
         `,
         popups: [
             {
@@ -1327,13 +1294,10 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.19': {
         name: '3.19',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.19</h4>
-            <p>
-            Now we can solder Power Jack.
-
-            Solder.
-            </p>
+        contentMD: `
+            #### Step 3.19
+            Now we can mount the barrel jack. Line up the three connectors to the slits in the board, and push it down to the board.
+            Then solder it to the board.
         `,
         popups: [
             {
@@ -1365,11 +1329,11 @@ export const steps: { [key: string]: Step | Substep } = {
     'step3.20': {
         name: '3.20',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 3.20</h4>
-            <p>
-            Now we can insert the Atmega328 Processor (Attention to the position of the Socket and IC).
-            </p>
+        contentMD: `
+            #### Step 3.20
+            Lastly, we can insert the ATMEGA328P microcontroller into the socket into the socket mounted just a few steps ago. This is the brain of your board and it is important it is mounted in the right direction. 
+            
+            The direction of the microcontroller is indicated by a semi-circle on one end of the component. Orient it so the semi-circle faces away from the board.
         `,
         popups: [
             {
