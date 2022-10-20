@@ -94,7 +94,9 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
         #### Step 1.2
         On the right side of your board we have designed a test sheet for your first soldering gig. 
+
         Practice your soldering skills by filling the holes that make a heart-shape with solder, until you feel comfortable doing the real thing.
+
         For more information about how to solder, click the tooltip above.
         `,
         popups: [
@@ -167,7 +169,7 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 1.3
         Start with the first 1k Ohm resistor, color coded Brown, Black, Red.
 
-        ![1kOhm](assets/1kOhm.png)
+        ![1kOhm](https://www.datocms-assets.com/79069/1666272131-1kohm.png)
         
             The colored bands on a resistor represents the resistance of your component, and can be read from left to right.
            
@@ -278,14 +280,14 @@ export const steps: { [key: string]: Step | Substep } = {
         Now let's mount the 10kOhm R2 (Brown-Black-Orange Gold).
         Place them in the spot labeled R2 10k. 
 
-        ![10kOhm](assets/10kOhm.png)
+        ![10kOhm](https://www.datocms-assets.com/79069/1666272137-10kohm.png)
 
         Solder it to the board like you did in the previous step.
     
         You only have one resistor left to solder, and it is R3 1MOhm (Brown, black, green, gold).
         This resistor occupies the spot labeled R3 1M. 
 
-        ![1MOhm](assets/1MOhm.png)
+        ![1MOhm](https://www.datocms-assets.com/79069/1666272134-1mohm.png)
 
         Solder it to the board, cut the legs, and then you can move on to the next step.
         `,
@@ -523,7 +525,7 @@ export const steps: { [key: string]: Step | Substep } = {
         
         Take the 1 Kohm R4 resistor (brown, black and red) and mount it on the PCB, flip the board over and solder the resistor to the board.
 
-        ![1kOhm](assets/1kOhm.png)
+        ![1kOhm](https://www.datocms-assets.com/79069/1666272131-1kohm.png)
 
         Now on to the Yellow LED. 
         
@@ -651,7 +653,7 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.1
         Grab 5 1k Ohm resistors (brown, black, red, gold).
 
-        ![1kOhm](assets/1kOhm.png)
+        ![1kOhm](https://www.datocms-assets.com/79069/1666272131-1kohm.png)
 
         These resistors goes in the positions on the board labeled R5, R6, R7, R8 and R11 1k Ohm. First remove the tape on both of them ends of the resistor leads. Then, bend over the legs of the resistor and insert it
         
@@ -695,7 +697,7 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.2
         Grab one 10kOhm resistor (brown, black, orange, gold).
 
-        ![10kOhm](assets/10kOhm.png)
+        ![10kOhm](https://www.datocms-assets.com/79069/1666272137-10kohm.png)
 
         This resistor goes to the place on the board labeled R9, 10kOhm. 
         
@@ -734,7 +736,7 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.3
         Grab a 1MOhm resistor (brown, black, green, gold) to populate the last empty resistorslot.
 
-        ![1MOhm](assets/1MOhm.png)
+        ![1kOhm](https://www.datocms-assets.com/79069/1666272134-1mohm.png)
 
         This resistor goes in R10, 1MOhm. 
         For one last resistor - flip the board over, solder, and cut.
@@ -1047,6 +1049,7 @@ export const steps: { [key: string]: Step | Substep } = {
         Grab it and push it into the slot marked Q1. This component is non-reversible and needs to go into the board in a specific direction. 
         
         One of the Mosfets sides is flat, match that side with the flat edge on the PCBs drawing.
+
         Then solder it to the board.
         `,
         popups: [
@@ -1088,6 +1091,7 @@ export const steps: { [key: string]: Step | Substep } = {
         
         This component is also non-reversible, and also has a flat edge 
         that you can use for alignment. 
+
         Push it down, and solder it to the board.
         `,
         popups: [
@@ -1124,6 +1128,7 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.13
         
         We can now mount the electrolytic capacitors that go in C6 & C7. These capacitors are polarized (47uF / 25V), The negative side is indicated by a white stripe on the body of the capacitor.
+
         Correctly orient them using the indication on the body, and then solder them to the board.
         `,
         popups: [
@@ -1159,7 +1164,9 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
         #### Step 3.14
         Now we can mount the blue 100nF capacitors.
+
         These capacitors go in the positions on the board marked C8, C9, C10, C11, C12, C13.
+
         Solder them to the board.
         `,
         popups: [
@@ -1195,7 +1202,9 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
             #### Step 3.15
             Now we can solder the LDO 5v. It goes in the position marked U3. 
+
             Push the legs through the holes in the PCB, then gently bend the component so that it is flush against the PCB, and the hole in the component lines up with the hole in the PCB. 
+
             Then solder the LDO to the board.
         `,
         popups: [
@@ -1231,6 +1240,7 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
         #### Step 3.16
         Now we can solder the socket for the ATMEGA328P, that goes in the position marked U1.
+
         Push it in place then solder the legs one by one. 
         `,
         popups: [
@@ -1266,6 +1276,7 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
         #### Step 3.17
         Now we can mount the pin connectors. 
+
         Push them into their respective positions, J2 & J3, then solder them to the board.
         `,
         popups: [
@@ -1310,6 +1321,7 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
             #### Step 3.18
             Now we can mount the ICSP headers. On the PCB the position is marked J1.
+
             Push it into position then solder the component to the board.     
         `,
         popups: [
@@ -1345,6 +1357,7 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
             #### Step 3.19
             Now we can mount the barrel jack. Line up the three connectors to the slits in the board, and push it down to the board.
+
             Then solder it to the board.
         `,
         popups: [

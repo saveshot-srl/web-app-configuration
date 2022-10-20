@@ -69,7 +69,7 @@ export const steps: { [key: string]: Step | Substep } = {
                 Let's start with the 100kOhm Resistor, that is colour coded brown, black, yellow.
                 This resistor goes in the slot labelled R1. 
 
-                ![100kOhm](assets/100kOhm.png)
+                ![100kOhm](https://www.datocms-assets.com/79069/1666272143-100kohm.png)
 
                 Place it in position, then solder it to the board.
         
@@ -110,7 +110,7 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 4.2
         Now let's mount the 10 Ohm Resistor, that is colour coded brown, black, black.
 
-        ![10Ohm](assets/10Ohm.png)
+        ![10Ohm](https://www.datocms-assets.com/79069/1666272140-10ohm.png)https://www.datocms-assets.com/79069/1666272140-10ohm.png)
 
         This resistor goes in R2. 
 
