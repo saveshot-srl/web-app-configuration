@@ -165,7 +165,9 @@ export const steps: { [key: string]: Step | Substep } = {
         isSubstep: true,
         contentMD: `
         #### Step 1.3
-        Start with the first 1k Ohm resistor, color coded Brown-Black-Red | Gold.
+        Start with the first 1k Ohm resistor, color coded Brown, Black, Red.
+
+        ![1kOhm](assets/1kOhm.png)
         
             The colored bands on a resistor represents the resistance of your component, and can be read from left to right.
            
@@ -173,10 +175,13 @@ export const steps: { [key: string]: Step | Substep } = {
             The third or fourth band is a multiplier. Red tells you to multiply by 100: 
          
             10 * 100 = 1000.
+
+            The last band indicates tolerance, with the gold band of this resistor indicating a tolerance of +/- 5% of the resistorvalue. 
          
             This resistor is to be placed at the location  labeled R1 1k.
             Remove the tape at both ends of the resistors leads, bend them and insert the resistor
             into its designated spot on the circuit board. Orientation is not important.
+
             Once the resistor is in place, it helps
             To slightly bend the leads outwards to hold the component in place.
             Now solder the resistor using the procedure you learned in Step 1.2
@@ -272,11 +277,17 @@ export const steps: { [key: string]: Step | Substep } = {
            
         Now let's mount the 10kOhm R2 (Brown-Black-Orange Gold).
         Place them in the spot labeled R2 10k. 
+
+        ![10kOhm](assets/10kOhm.png)
+
         Solder it to the board like you did in the previous step.
     
         You only have one resistor left to solder, and it is R3 1MOhm (Brown, black, green, gold).
         This resistor occupies the spot labeled R3 1M. 
-        Solder it to the board, and then you can move on to the next step.
+
+        ![1MOhm](assets/1MOhm.png)
+
+        Solder it to the board, cut the legs, and then you can move on to the next step.
         `,
         popups: [
             {
@@ -317,7 +328,9 @@ export const steps: { [key: string]: Step | Substep } = {
         This capacitor goes to the place on the board labeled C1 22pF.
         First remove the tape from both ends of the capacitors leads, then insert it
         in its spot on the circuit board.
+
         Once the capacitor is in place, it helps to bend the leads slightly outwards to prevent the component from falling off. 
+
         Solder the two leads to the board using what you have learned so far.
       
         `,
@@ -360,8 +373,13 @@ export const steps: { [key: string]: Step | Substep } = {
             
             On the body of the component you can identify a negative and positive label, the negative side is indicated by a 
             white stripe on the body of the component.
-            On the board we have a positive label (+). Insert the positive lead in the hole labeled “+”.
-            Then solder it to the board.
+
+            You can also identify the orientation of the component by inspecting the length of the legs. If, on an electrical component, 
+            one leg is longer than the other it is normally the positive lead.
+
+            On the board we have a negative label (-). Insert the negative lead in the hole labeled “-”.
+
+            Then solder it to the board, and cut the legs.
             
             `,
         popups: [
@@ -402,9 +420,10 @@ export const steps: { [key: string]: Step | Substep } = {
         We can now solder the second 100nF (nanoFarad) capacitor, which is blue.
         This capacitor goes to the place on the board labeled C3 100nF.
         
-        First remove the tape at both ends of the capacitors leads, then insert it his home on the circuit board.
-        Once the capacitor is in place, it helps to bend them slightly outwards so that the side does not fall. 
-        Now solder the two leads to the board using what you have learned so far.
+        First remove the tape on both ends of the capacitors leads, then insert it in its home on the circuit board.
+        Once the capacitor is in place, it helps to bend the legs slightly outwards so that it does not fall out when you flip the board over. 
+        
+        Now solder the two leads to the board and cut the legs.
         `,
         popups: [
             {
@@ -440,10 +459,8 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 1.8
         
         Congratulations! You have completed your first solder experience.
-        Now we can clean the board. The solder contains flux that stains your board, but don't worry! It comes off easily!
-        Take a sheet of absorbent paper, a toothbrush, and isopropyl alcohol,
-        wet the Board and brush fearlessly on both the TOP and BOTTOM sides.
-        Once it is clean, detach it from the PCB by twisting it, and you've got yourself a brand new Arduino keychain!
+
+        Detach it from the PCB by twisting it, and you've got yourself a brand new Arduino keychain!
         `,
         popups: [
             {
@@ -505,11 +522,17 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 2.1
         
         Take the 1 Kohm R4 resistor (brown, black and red) and mount it on the PCB, flip the board over and solder the resistor to the board.
+
+        ![1kOhm](assets/1kOhm.png)
+
         Now on to the Yellow LED. 
         
         Note that LEDs are polarized components, meaning that the direction of the LED leads matters as current can only flow in one direction. 
         The long leg is known as the Anode and is the positive (+) lead. The short leg is known as the Cathode and is the negative (-) lead. Put the LED leads through the holes marked LD1, and solder them to the board.
+       
         Now Solder the cables, insert the red cable in the label + and solder. Then solder the black cable to the hole labelled -.
+
+        If you're having a hard time getting the cables through the holes in the pcb you may find it helpful to twist the tip of the cable before trying to insert it. 
         `,
         popups: [
             {
@@ -577,25 +600,25 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD:`
         #### Step 3.0
         To assemble your Arduino UNO board, you will require the following components:
+
         - 1 x PCB ASX00040
-        - 7 x Resistor
-        - 1 x Diodes
+        - 7 x Resistors
+        - 1 x Diode
         - 1 x CRYSTAL 16MHz
         - 2 x Capacitors 22pF
         - 4 x LEDs
         - 1 x Push-Button
-        - 1 x PCB USB_C Serial
+        - 1 x USB_C to Serial adapter
         - 1 x Mosfet
         - 1 x LDO 3,3v
-        - 2 x Capacitors Electrolytic
+        - 2 x Electrolytic Capacitors
         - 1 x LDO 5v
-        - 6 x Cap 100nF
-        - 1 x Socket U1 Atmega 328p
+        - 6 x Capacitors 100nF
+        - 1 x Atmega 328p socket
         - 2 x connectors I/O 
         - 1 x Connector ICPS
         - 1 x Power Jacks
-        - 1 x Microcontroller ATmega 328p
-        Follow these steps to make sure the process is as easy as possible.
+        - 1 x ATmega 328p Microcontroller
         
         `,
         iconName: '3',
@@ -627,9 +650,14 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD:`
         #### Step 3.1
         Grab 5 1k Ohm resistors (brown, black, red, gold).
+
+        ![1kOhm](assets/1kOhm.png)
+
         These resistors goes in the positions on the board labeled R5, R6, R7, R8 and R11 1k Ohm. First remove the tape on both of them ends of the resistor leads. Then, bend over the legs of the resistor and insert it
-        Once the resistors are in place, it helps to bend them slightly outwards so that the side does not fall off.
-        Flip the board over, solder and cut the excess leads exactly like you did on the other circuits.
+        
+        Once the resistors are in place, it helps to bend the legs slightly outwards so that they do not fall off.
+        
+        Flip the board over, solder and cut the legs exactly like you did on the other circuits.
         `,
         popups: [
             {
@@ -666,8 +694,12 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD:`
         #### Step 3.2
         Grab one 10kOhm resistor (brown, black, orange, gold).
+
+        ![10kOhm](assets/10kOhm.png)
+
         This resistor goes to the place on the board labeled R9, 10kOhm. 
-        Flip the board over, solder, and cut.
+        
+        Flip the board over, solder, and cut the legs.
         `,
         popups: [
             {
@@ -701,7 +733,10 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD:`
         #### Step 3.3
         Grab a 1MOhm resistor (brown, black, green, gold) to populate the last empty resistorslot.
-        This resistor goes to the place on the board labeled R10, 1MOhm. 
+
+        ![1MOhm](assets/1MOhm.png)
+
+        This resistor goes in R10, 1MOhm. 
         For one last resistor - flip the board over, solder, and cut.
         
         `,
@@ -737,7 +772,9 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD:`
         #### Step 3.4
         
-        Now we solder the D1 Diode. This is, like an LED, a polarized component. The Diode has a white band, line up the white band on the component with the white mark on the PCB and solder it down to ensure the diode is mounted in the right direction.
+        Now we solder the D1 Diode. This is, like an LED, a polarized component. 
+        
+        The Diode has a white band, line up the white band on the component with the white mark on the PCB and solder it to the board.
         `,
         popups: [
             {
@@ -774,6 +811,7 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.5
         
         Now, mount the 16MHz crystal in the Y1 position.
+
         Flip the board over and solder the crystal to the board.
         `,
         popups: [
@@ -810,9 +848,13 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.6
         
         Now for the LEDs LD2, LD3, LD4 which should be yellow. Note the direction of the LED leads does matter.
+
         The long leg is known as the Anode and is the positive (+) lead.
+
         The short leg is known as the Cathode and is the negative (-) lead.
+
         Put the LEDs through the holes marked LD2, LD3, LD4.
+
         Solder the leads to the board.
         
         `,
@@ -850,6 +892,7 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.7
         
         Now for the green LED, going in slot LD5. Grab the LED and put the leads through the holes marked LD5.
+
         Then solder the LED to the board.
         `,
         popups: [
@@ -885,7 +928,9 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.8
         
         Now let's move on to your capacitors, they are 22pF yellow capacitors.
+
         These capacitors go in the positions on the board labeled C4 and C5.
+
         Solder the capacitors to the board.
         `,
         popups: [
@@ -922,7 +967,9 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.9
         
         Let's move on to the push-button.
+
         This push-button goes in the position on the board labeled PB1.
+
         Solder the legs of the push-button to the board.
         `,
         popups: [
@@ -959,7 +1006,8 @@ export const steps: { [key: string]: Step | Substep } = {
         Let's move on to the PCB USB-Serial. 
         
         Push it down with the USB-C port facing away from the board.
-        Solder it to the board, then carefully cut the legs. 
+
+        Solder it to the board, and cut the legs. 
         `,
         popups: [
             {
