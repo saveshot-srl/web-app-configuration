@@ -31,7 +31,7 @@ export const steps: { [key: string]: Step | Substep } = {
         // `,
         contentMD: `
             ### Required tools:  
-            Place all the components of bag No.2 & 4 on your desk  
+            Place all the components of bag No.1 & 2 on your desk  
         `,
         // icon: 'tool.png', // icona: path relativo a public. Questo file è public/components/connector.jpg
         iconName: '1', //   se non c'è l'icona viene mostrato questo, altrimenti questo diventa l'alt dell'icona

@@ -25,6 +25,8 @@ export const steps: { [key: string]: Step | Substep } = {
         name: 'MAKE YOUR SYNTH SHIELD',
         "contentMD": `
             #### Step 4.0
+            Place all the components of bag No.3, 4 & 5 on your desk  
+        
             To assemble your Synth Shield, you will require the following components:
                - 1 x PCB ASX00045
                - 1 x Resistor 100k Ohm
