@@ -240,7 +240,6 @@ export const steps: { [key: string]: Step | Substep } = {
             You can also identify the negative side by its shorter leg. 
 
             Solder it to the board and cut the legs.
-        
         `,
         popups: [
             {
@@ -411,6 +410,7 @@ export const steps: { [key: string]: Step | Substep } = {
         Now turn your attention to the speaker grill. Twist it to remove the grill from the PCB. 
         
         Grab two screws, and two nuts and attach them to the opposing holes in the grill.
+
         `,
         popups: [
             {
@@ -447,6 +447,7 @@ export const steps: { [key: string]: Step | Substep } = {
                 
                 Now reattach the grill to the main PCB with 2 more nuts, holding the speaker in place.
             
+
         `,
         popups: [
             {
@@ -479,6 +480,7 @@ export const steps: { [key: string]: Step | Substep } = {
             
                 Now you can solder the cables on to the pads of the PCB. 
             
+
         `,
         popups: [
             {
@@ -513,6 +515,7 @@ export const steps: { [key: string]: Step | Substep } = {
 
                 To make the assembly easier for yourself, insert the pin headers into the UNO board you previously assembled, to keep the pins straight while you're soldering them to the shield.
                
+
         `,
         popups: [
             {
@@ -550,6 +553,7 @@ export const steps: { [key: string]: Step | Substep } = {
             Solder the pin-headers to the board one by one.
         
     `,
+
         popups: [
             {
                 title: 'Step by Step',
@@ -586,6 +590,7 @@ export const steps: { [key: string]: Step | Substep } = {
             Now remove the shield from the board again, so you can insert all the spacers and pins.
         
     `,
+
         popups: [
             {
                 title: 'Step by Step',
@@ -619,6 +624,7 @@ export const steps: { [key: string]: Step | Substep } = {
                 Now we can insert the knobs into the potentiometers, and then we are ready to connect a USB-C and upload the test sketch to the UNO. You can find it back on the MAKE YOUR UNO website
 
                 And with that, you have completed the assembly of your Synth Shield! What an achievement!
+
         `,
         popups: [
             {
@@ -669,6 +675,7 @@ export const steps: { [key: string]: Step | Substep } = {
         Use the screws to attach the grill to the cardboard face.
     
     `,
+
         iconName: '5',
         focusPointCoordinates: { x: -1, y: 0, z: 0 },
         animationPatterns: ['Animation'],
@@ -704,13 +711,13 @@ export const steps: { [key: string]: Step | Substep } = {
         name: '5.0.1',
         isSubstep: true,
         contentMD: `
-        <h4>Step 5.0.1</h4>
-        <p>
+        #### Step 5.0.1
             Detach the knobs from the potentiometers, and remove the shield from the UNO board.
 
             Mount the shield to the cardboard face using the screws on the speaker grill.
         </p>
     `,
+
         popups: [
             {
                 title: 'Final mount',
@@ -744,15 +751,14 @@ export const steps: { [key: string]: Step | Substep } = {
     'step5.0.2': {
         name: '5.0.2',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 5.0.2</h4>
-            <p>
+        contentMD: `
+            #### Step 5.0.2
+
                 Now reattach the UNO board and place the entire assembly inside of the cardboard box. 
 
                 Reattach the potentiometer knobs and you are all done!
 
                 Well done! Now return to the MAKE YOUR UNO website to learn about the next steps to bring your new synthesizer to life!
-            </p>
         `,
         popups: [
             {

@@ -22,7 +22,7 @@ type Substep = StepBase & { isSubstep: true }
 // Hotspot presnti nella scena e loro proprietà
 export const steps: { [key: string]: Step | Substep } = {
     "step1": { // id hotspot, per ora li chiamiamo hotspot1, hotspot2, hotspot3, ecc
-        name: 'Keychain', // nome dell'hotspot: questo compare sia sulla barra degli hotspot sotto che sull'hotspot stesso quando è selezionato
+        name: 'Learn how to solder', // nome dell'hotspot: questo compare sia sulla barra degli hotspot sotto che sull'hotspot stesso quando è selezionato
         // contentHtml: `
         //     <h4>Required tools</h4>
         //     <p> Place all the components of sachet No.1 on
@@ -33,7 +33,7 @@ export const steps: { [key: string]: Step | Substep } = {
             ### Required tools:  
             Place all the components of bag No.1 & 2 on your desk  
         `,
-        // icon: 'tool.png', // icona: path relativo a public. Questo file è public/components/connector.jpg
+        // icon: 'eyeIcon.png', // icona: path relativo a public. Questo file è public/components/connector.jpg
         iconName: '1', //   se non c'è l'icona viene mostrato questo, altrimenti questo diventa l'alt dell'icona
         focusPointCoordinates: { x: 0, y: 0, z: 0 },
         animationPatterns: ['Animation'], // Pattern del nome animazione Non mettere robe ambigue tipo Null (senza |) se no fa il play di tutte le animazioni che matchano
@@ -46,7 +46,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Required Tools',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 autoOpen: false,
                 // contentHtml: `
                 //     <p>WHAT YOU NEED TO ASSEMBLE A KIT</p>
@@ -102,7 +102,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'How to Solder',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <p>
                         Melt a tiny bit of solder wire on the iron's tip.
@@ -138,7 +138,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'How to Solder',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <p>
                         Melt a tiny bit of solder wire on the iron's tip.
@@ -192,7 +192,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step1.3.1.jpg"/>
@@ -241,7 +241,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step1.3.1.jpg"/>
@@ -294,7 +294,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step1.4.1.jpg"/>
@@ -339,7 +339,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step1.5.1.jpg"/>
@@ -387,7 +387,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step1.6.1.jpg"/>
@@ -430,7 +430,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step1.7.1.jpg"/>
@@ -467,7 +467,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step1.8.1.jpg"/>
@@ -496,7 +496,7 @@ export const steps: { [key: string]: Step | Substep } = {
         ]
     },
     "step2": {
-        name: 'DEBUG circuit',
+        name: 'Create a Debug circuit',
         isSubstep: false,
         contentMD:`
         #### Step 2.0
@@ -539,7 +539,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step2.0.1.jpg"/>
@@ -578,7 +578,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step2.2.1.jpg"/>
@@ -597,7 +597,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: []
     },
     "step3": {
-        name: 'UNO assembly',
+        name: 'Make your UNO',
         isSubstep: false,
         contentMD:`
         #### Step 3.0
@@ -635,7 +635,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.0.1.jpg"/>
@@ -664,7 +664,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.1.1.jpg"/>
@@ -706,7 +706,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.2.1.jpg"/>
@@ -745,7 +745,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.3.1.jpg"/>
@@ -781,7 +781,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.4.1.jpg"/>
@@ -819,7 +819,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.5.1.jpg"/>
@@ -863,7 +863,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.6.1.jpg"/>
@@ -900,7 +900,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.7.1.jpg"/>
@@ -938,7 +938,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.8.1.jpg"/>
@@ -977,7 +977,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.9.1.jpg"/>
@@ -1014,7 +1014,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.10.1.jpg"/>
@@ -1055,7 +1055,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.11.1.jpg"/>
@@ -1097,7 +1097,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.12.1.jpg"/>
@@ -1134,7 +1134,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.13.1.jpg"/>
@@ -1172,7 +1172,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.14.1.jpg"/>
@@ -1210,7 +1210,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.15.1.jpg"/>
@@ -1246,7 +1246,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.16.1.jpg"/>
@@ -1282,7 +1282,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.17.1.jpg"/>
@@ -1327,7 +1327,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.18.1.jpg"/>
@@ -1363,7 +1363,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.19.1.jpg"/>
@@ -1399,7 +1399,7 @@ export const steps: { [key: string]: Step | Substep } = {
         popups: [
             {
                 title: 'Step by Step',
-                icon: 'tool.png',
+                icon: 'eyeIcon.png',
                 contentHtml: `
                     <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
                         <img src="Step3.20.1.jpg"/>

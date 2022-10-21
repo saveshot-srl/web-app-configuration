@@ -80,7 +80,7 @@ export const steps: { [key: string]: Step | Substep } = {
 
         ![1kOhm](https://www.datocms-assets.com/79069/1666272131-1kohm.png)
 
-        These resistors goes in the positions on the board labeled R5, R6, R7, R8 and R11 1k Ohm. First remove the tape on both of them ends of the resistor leads. Then, bend over the legs of the resistor and insert it
+        These resistors go in the positions on the board labeled R5, R6, R7, R8 and R11 1k Ohm. First remove the tape on both of them ends of the resistor leads. Then, bend over the legs of the resistor and insert it
         
         Once the resistors are in place, it helps to bend the legs slightly outwards so that they do not fall off.
         
@@ -127,6 +127,7 @@ export const steps: { [key: string]: Step | Substep } = {
         This resistor goes to the place on the board labeled R9, 10kOhm. 
         
         Flip the board over, solder, and cut the legs.
+
         `,
         popups: [
             {
@@ -165,6 +166,7 @@ export const steps: { [key: string]: Step | Substep } = {
         ![1kOhm](https://www.datocms-assets.com/79069/1666272134-1mohm.png)
 
         This resistor goes in R10, 1MOhm. 
+
         For one last resistor - flip the board over, solder, and cut.
         
         `,
@@ -204,6 +206,7 @@ export const steps: { [key: string]: Step | Substep } = {
         Now we solder the D1 Diode. This is, like an LED, a polarized component. 
         
         The Diode has a white band, line up the white band on the component with the white mark on the PCB and solder it to the board.
+
         `,
         popups: [
             {

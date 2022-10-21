@@ -61,6 +61,7 @@ export const steps: { [key: string]: Step | Substep } = {
         Now Solder the cables, insert the red cable in the label + and solder. Then solder the black cable to the hole labelled -.
 
         If you're having a hard time getting the cables through the holes in the pcb you may find it helpful to twist the tip of the cable before trying to insert it. 
+
         `,
         popups: [
             {

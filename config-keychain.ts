@@ -170,6 +170,7 @@ export const steps: { [key: string]: Step | Substep } = {
         Start with the first 1k Ohm resistor, color coded Brown, Black, Red.
 
         ![1kOhm](https://www.datocms-assets.com/79069/1666272131-1kohm.png)
+
         
             The colored bands on a resistor represents the resistance of your component, and can be read from left to right.
            
@@ -179,7 +180,7 @@ export const steps: { [key: string]: Step | Substep } = {
             10 * 100 = 1000.
 
             The last band indicates tolerance, with the gold band of this resistor indicating a tolerance of +/- 5% of the resistorvalue. 
-         
+            
             This resistor is to be placed at the location  labeled R1 1k.
             Remove the tape at both ends of the resistors leads, bend them and insert the resistor
             into its designated spot on the circuit board. Orientation is not important.
@@ -301,6 +302,7 @@ export const steps: { [key: string]: Step | Substep } = {
         ![1MOhm](https://www.datocms-assets.com/79069/1666272134-1mohm.png)
 
         Solder it to the board, cut the legs, and then you can move on to the next step.
+
         `,
         popups: [
             {
@@ -380,6 +382,7 @@ export const steps: { [key: string]: Step | Substep } = {
         name: '1.6',
         isSubstep: true,
         contentMD: ` 
+
         #### Step 1.6
         Let's now solder our first electrolytic capacitor C2. This capacitor is polarized (47uF/25V), meaning that 
         the direction you place it in matters.
@@ -393,8 +396,8 @@ export const steps: { [key: string]: Step | Substep } = {
         On the board we have a negative label (-). Insert the negative lead in the hole labeled “-”.
 
         Then solder it to the board, and cut the legs.
-        
         `,
+
         popups: [
             {
                 title: 'Step by Step',
