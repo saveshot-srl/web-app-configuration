@@ -30,9 +30,9 @@ export const steps: { [key: string]: Step | Substep } = {
         //     <img style="width: 220px;" src="Step1.0.jpg"/>
         // `,
         contentMD: `
-            ### Required tools:  
-            Place all the components of bag No.2 & 4 on your desk  
-        `,
+        ### Required tools:  
+        Place all the components of bag No.1 & 2 on your desk  
+    `,
         // icon: 'eyeIcon.png', // icona: path relativo a public. Questo file è public/components/connector.jpg
         iconName: '1', //   se non c'è l'icona viene mostrato questo, altrimenti questo diventa l'alt dell'icona
         focusPointCoordinates: { x: 0, y: 0, z: 0 },
@@ -94,7 +94,9 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
         #### Step 1.2
         On the right side of your board we have designed a test sheet for your first soldering gig. 
+
         Practice your soldering skills by filling the holes that make a heart-shape with solder, until you feel comfortable doing the real thing.
+
         For more information about how to solder, click the tooltip above.
         `,
         popups: [
@@ -165,7 +167,10 @@ export const steps: { [key: string]: Step | Substep } = {
         isSubstep: true,
         contentMD: `
         #### Step 1.3
-        Start with the first 1k Ohm resistor, color coded Brown-Black-Red | Gold.
+        Start with the first 1k Ohm resistor, color coded Brown, Black, Red.
+
+        ![1kOhm](https://www.datocms-assets.com/79069/1666272131-1kohm.png)
+
         
             The colored bands on a resistor represents the resistance of your component, and can be read from left to right.
            
@@ -173,10 +178,13 @@ export const steps: { [key: string]: Step | Substep } = {
             The third or fourth band is a multiplier. Red tells you to multiply by 100: 
          
             10 * 100 = 1000.
-         
+
+            The last band indicates tolerance, with the gold band of this resistor indicating a tolerance of +/- 5% of the resistorvalue. 
+            
             This resistor is to be placed at the location  labeled R1 1k.
             Remove the tape at both ends of the resistors leads, bend them and insert the resistor
             into its designated spot on the circuit board. Orientation is not important.
+
             Once the resistor is in place, it helps
             To slightly bend the leads outwards to hold the component in place.
             Now solder the resistor using the procedure you learned in Step 1.2
@@ -218,18 +226,29 @@ export const steps: { [key: string]: Step | Substep } = {
     'step1.3.1': {
         name: '1.3.1',
         isSubstep: true,
-        contentHtml: `
-            <h4>Step 1.3</h4>
-            <p> Start with the first 1k Ohm resistor, color coded Brown-Black-Red | Gold.
-                <br/>
-                Brown = 1, Black = 0, Red x 100 =  10  X 100 = 1000.
-                This resistor is to be placed at the location  labeled R1 1k.
-                Remove the tape at both ends of the resistor’s leads, bend them and insert the resistor
-                into its designated spot on the circuit board. Orientation is not important.
-                Once the resistor is in place, it helps
-                To slightly bend the leads outwards to hold the component in place.
-                Now solder the resistor using the procedure you learned in Step 1.2
-            </p>
+        contentMD: `
+        #### Step 1.3
+        Start with the first 1k Ohm resistor, color coded Brown, Black, Red.
+
+        ![1kOhm](https://www.datocms-assets.com/79069/1666272131-1kohm.png)
+        
+            The colored bands on a resistor represents the resistance of your component, and can be read from left to right.
+           
+            The first two or three bands represent single digits. Brown = 1, black = 0, read it from left to right and you get 10.
+            The third or fourth band is a multiplier. Red tells you to multiply by 100: 
+         
+            10 * 100 = 1000.
+
+            The last band indicates tolerance, with the gold band of this resistor indicating a tolerance of +/- 5% of the resistorvalue. 
+         
+            This resistor is to be placed at the location  labeled R1 1k.
+            Remove the tape at both ends of the resistors leads, bend them and insert the resistor
+            into its designated spot on the circuit board. Orientation is not important.
+
+            Once the resistor is in place, it helps
+            To slightly bend the leads outwards to hold the component in place.
+            Now solder the resistor using the procedure you learned in Step 1.2
+       
         `,
         popups: [
             {
@@ -272,11 +291,18 @@ export const steps: { [key: string]: Step | Substep } = {
            
         Now let's mount the 10kOhm R2 (Brown-Black-Orange Gold).
         Place them in the spot labeled R2 10k. 
+
+        ![10kOhm](https://www.datocms-assets.com/79069/1666272137-10kohm.png)
+
         Solder it to the board like you did in the previous step.
     
         You only have one resistor left to solder, and it is R3 1MOhm (Brown, black, green, gold).
         This resistor occupies the spot labeled R3 1M. 
-        Solder it to the board, and then you can move on to the next step.
+
+        ![1MOhm](https://www.datocms-assets.com/79069/1666272134-1mohm.png)
+
+        Solder it to the board, cut the legs, and then you can move on to the next step.
+
         `,
         popups: [
             {
@@ -317,7 +343,9 @@ export const steps: { [key: string]: Step | Substep } = {
         This capacitor goes to the place on the board labeled C1 22pF.
         First remove the tape from both ends of the capacitors leads, then insert it
         in its spot on the circuit board.
+
         Once the capacitor is in place, it helps to bend the leads slightly outwards to prevent the component from falling off. 
+
         Solder the two leads to the board using what you have learned so far.
       
         `,
@@ -354,16 +382,22 @@ export const steps: { [key: string]: Step | Substep } = {
         name: '1.6',
         isSubstep: true,
         contentMD: ` 
-            #### Step 1.6
-            Let's now solder our first electrolytic capacitor C2. This capacitor is polarized (47uF/25V), meaning that 
-            the direction you place it in matters.
-            
-            On the body of the component you can identify a negative and positive label, the negative side is indicated by a 
-            white stripe on the body of the component.
-            On the board we have a positive label (+). Insert the positive lead in the hole labeled “+”.
-            Then solder it to the board.
-            
-            `,
+
+        #### Step 1.6
+        Let's now solder our first electrolytic capacitor C2. This capacitor is polarized (47uF/25V), meaning that 
+        the direction you place it in matters.
+        
+        On the body of the component you can identify a negative and positive label, the negative side is indicated by a 
+        white stripe on the body of the component.
+
+        You can also identify the orientation of the component by inspecting the length of the legs. If, on an electrical component, 
+        one leg is longer than the other it is normally the positive lead.
+
+        On the board we have a negative label (-). Insert the negative lead in the hole labeled “-”.
+
+        Then solder it to the board, and cut the legs.
+        `,
+
         popups: [
             {
                 title: 'Step by Step',
@@ -402,9 +436,10 @@ export const steps: { [key: string]: Step | Substep } = {
         We can now solder the second 100nF (nanoFarad) capacitor, which is blue.
         This capacitor goes to the place on the board labeled C3 100nF.
         
-        First remove the tape at both ends of the capacitors leads, then insert it his home on the circuit board.
-        Once the capacitor is in place, it helps to bend them slightly outwards so that the side does not fall. 
-        Now solder the two leads to the board using what you have learned so far.
+        First remove the tape on both ends of the capacitors leads, then insert it in its home on the circuit board.
+        Once the capacitor is in place, it helps to bend the legs slightly outwards so that it does not fall out when you flip the board over. 
+        
+        Now solder the two leads to the board and cut the legs.
         `,
         popups: [
             {
@@ -440,10 +475,8 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 1.8
         
         Congratulations! You have completed your first solder experience.
-        Now we can clean the board. The solder contains flux that stains your board, but don't worry! It comes off easily!
-        Take a sheet of absorbent paper, a toothbrush, and isopropyl alcohol,
-        wet the Board and brush fearlessly on both the TOP and BOTTOM sides.
-        Once it is clean, detach it from the PCB by twisting it, and you've got yourself a brand new Arduino keychain!
+
+        Detach it from the PCB by twisting it, and you've got yourself a brand new Arduino keychain!
         `,
         popups: [
             {
