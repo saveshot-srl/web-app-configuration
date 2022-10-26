@@ -100,7 +100,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1.2, y: 1, z: 0 },
-                contentHtml: '10ohm resistor',
+                contentHtml: '100kOhm resistor',
                 delayMs: 3500
             }
         ]
@@ -141,7 +141,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1.75, y: 1, z: 1 },
-                contentHtml: '10ohm resistor',
+                contentHtml: '10Ohm resistor',
                 delayMs: 3500
             }
         ]
@@ -184,7 +184,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -2.3, y: 1, z: 1.15 },
-                contentHtml: 'IC  amplifier',
+                contentHtml: 'IC amplifier',
                 delayMs: 2500
             }
         ]
@@ -222,7 +222,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1.3, y: 1, z: 1.7 },
-                contentHtml: '47nF capacitator',
+                contentHtml: '47nF capacitor',
                 delayMs: 3500
             }
         ]
@@ -302,7 +302,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -2.9, y: 1, z: 1.15 },
-                contentHtml: '100nF capacitator',
+                contentHtml: '100nF capacitor',
                 delayMs: 3500
             }
         ]
@@ -391,12 +391,12 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1.85, y: 1, z: 0 },
-                contentHtml: '10Kohm trimmers',
+                contentHtml: '10kOhm Potentiometers',
                 delayMs: 11500
             },
             {
                 coordinates: { x: -1.85, y: 1, z: 2.25 },
-                contentHtml: '10Kohm trimmers',
+                contentHtml: '10kOhm Potentiometers',
                 delayMs: 11500
             }
         ]
