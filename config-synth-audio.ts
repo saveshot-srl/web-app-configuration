@@ -112,7 +112,7 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 4.2
         Now let's mount the 10 Ohm Resistor, that is colour coded brown, black, black.
 
-        ![10Ohm](https://www.datocms-assets.com/79069/1666272140-10ohm.png)https://www.datocms-assets.com/79069/1666272140-10ohm.png)
+        ![10Ohm](https://www.datocms-assets.com/79069/1666272140-10ohm.png)
 
         This resistor goes in R2. 
 
