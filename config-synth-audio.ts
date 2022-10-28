@@ -715,7 +715,7 @@ export const steps: { [key: string]: Step | Substep } = {
             Detach the knobs from the potentiometers, and remove the shield from the UNO board.
 
             Mount the shield to the cardboard face using the screws on the speaker grill.
-        </p>
+
     `,
 
         popups: [
