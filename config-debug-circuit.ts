@@ -64,8 +64,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="Step2.0.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="Step2.0.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step2.1.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step2.1.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step2.1.4.jpg"/>
@@ -103,8 +103,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="Step2.2.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="Step2.2.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step2.2.2.jpg"/>
                     </div>
                 `
