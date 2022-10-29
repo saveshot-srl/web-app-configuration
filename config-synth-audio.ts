@@ -58,7 +58,7 @@ export const steps: { [key: string]: Step | Substep } = {
                 icon: 'eyeIcon.png',
                 autoOpen: true,
                 contentHtml: `
-                    <img src="Step4.0.1.jpg"/>
+                    <img style="margin-top: 0.5rem" src="Step4.0.1.jpg"/>
                 `
             }
         ],
@@ -83,8 +83,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="step4.1.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="step4.1.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.1.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.1.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.1.4.jpg"/>
@@ -124,8 +124,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="step4.2.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="step4.2.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.2.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.2.3.jpg"/>
                     </div>
@@ -170,8 +170,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="step4.3.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="step4.3.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.3.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.3.3.jpg"/>
                     </div>
@@ -208,8 +208,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="step4.4.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="step4.4.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.4.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.4.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.4.4.jpg"/>
@@ -250,8 +250,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="step4.5.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="step4.5.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.5.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.5.3.jpg"/>
                     </div>
@@ -289,8 +289,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="step4.6.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="step4.6.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.6.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="step6.3.jpg"/>
                     </div>
@@ -332,8 +332,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="step4.7.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="step4.7.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.7.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.7.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.7.4.jpg"/>
@@ -378,8 +378,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="step4.8.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="step4.8.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.8.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.8.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.8.4.jpg"/>
@@ -427,8 +427,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="step4.9.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="step4.9.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.9.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.9.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.9.4.jpg"/>
@@ -464,8 +464,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="step4.10.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="step4.10.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.10.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.10.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.10.4.jpg"/>
@@ -499,8 +499,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="step4.10.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="step4.10.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.10.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.10.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.10.4.jpg"/>
@@ -538,8 +538,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="step4.11.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="step4.11.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.11.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.11.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.11.4.jpg"/>
@@ -576,8 +576,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="step4.11.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="step4.11.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.11.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.11.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.11.4.jpg"/>
@@ -613,8 +613,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="step4.12.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="step4.12.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.12.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.12.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.12.4.jpg"/>
@@ -646,8 +646,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="step4.13.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="step4.13.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.13.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.13.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="step4.13.4.jpg"/>
@@ -699,8 +699,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Final mount',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="Step5.0.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="Step5.0.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step5.0.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step5.0.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step5.0.4.jpg"/>
@@ -732,8 +732,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Final mount',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="Step5.0.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="Step5.0.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step5.0.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step5.0.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step5.0.4.jpg"/>
@@ -776,8 +776,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Final mount',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="Step5.0.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="Step5.0.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step5.0.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step5.0.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step5.0.4.jpg"/>

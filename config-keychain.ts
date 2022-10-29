@@ -50,27 +50,63 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Required Tools',
                 icon: 'eyeIcon.png',
                 autoOpen: false,
-                // contentHtml: `
-                //     <p>WHAT YOU NEED TO ASSEMBLE A KIT</p>
-                //     <ul>
-                //     <li>Soldering Iron</li>
-                //     <li>Solder</li>
-                //     <li>Flush Cutter</li>
-                //     <li>Safety Glasses</li>
-                //     <li>Battery</li>
-                //     </ul>
-                //     <img src="tools-img.png"/>
-                // `
-                contentMD: `
-                    ## WHAT YOU NEED TO ASSEMBLE A KIT:
+                contentHtml: `
+                <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; max-width: 75vw; margin: 0 1rem">
+                    <div class="tool-img-div">
+                        <div>
+                            <img style="margin-top: 0.5rem" src="tools/tool1.svg"/>
+                            <p>Tool 1</p>
+                        </div>
+                    </div>
+                    <div class="tool-img-div">
+                        <div>
+                            <img style="margin-top: 0.5rem" src="tools/tool2.svg"/>
+                            <p>Tool 2</p>
+                        </div>
+                    </div>
+                    <div class="tool-img-div">
+                        <div>
+                            <img style="margin-top: 0.5rem" src="tools/tool3.svg"/>
+                            <p>Tool 3</p>
+                        </div>
+                    </div>
+                    <div class="tool-img-div">
+                        <div>
+                            <img style="margin-top: 0.5rem" src="tools/tool4.svg"/>
+                            <p>Tool 4</p>
+                        </div>
+                    </div>
+                    <div class="tool-img-div">
+                        <div>
+                            <img style="margin-top: 0.5rem" src="tools/tool5.svg"/>
+                            <p>Tool 5</p>
+                        </div>
+                    </div>
+                    <div class="tool-img-div">
+                        <div>
+                            <img style="margin-top: 0.5rem" src="tools/tool6.svg"/>
+                            <p>Tool 6</p>
+                        </div>
+                    </div>
+                    <div class="tool-img-div">
+                        <div>
+                            <img style="margin-top: 0.5rem" src="tools/tool7.svg"/>
+                            <p>Tool 7</p>
+                        </div>
+                    </div>
+                </div>
+                `,
+                // contentMD: `
+                //     ## WHAT YOU NEED TO ASSEMBLE A KIT:
                     
-                    - Soldering Iron
-                    - Solder
-                    - Flush Cutter
-                    - Safety Glasses
-                    - Battery
-                    ![img](tools-img.png)
-                `
+                //     - Soldering Iron
+                //     - Solder
+                //     - Flush Cutter
+                //     - Safety Glasses
+                //     - Battery
+
+                //     ![img](tools-img.png)
+                // `,
             }
         ],
         hotspots: []
@@ -101,6 +137,7 @@ export const steps: { [key: string]: Step | Substep } = {
         On the right side of your board we have designed a test sheet for your first soldering gig. 
         Practice your soldering skills by filling the holes that make a heart-shape with solder, until you feel comfortable doing the real thing.
         For more information about how to solder, click the tooltip above.
+
         ![img](new-images/step1/keychain1.2.1.jpg)
         ![img](new-images/step1/keychain1.2.2.jpg)
         `,
@@ -116,8 +153,8 @@ export const steps: { [key: string]: Step | Substep } = {
                         then slowly feed in the solder wire and try not to exceed the 3 seconds.
                         Do not worry if the Board gets too hot, it is designed to withstand high temperatures. 
                     </p>
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="Step1.2.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="Step1.2.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.2.2.jpg"/>
                     </div>
                 `
@@ -152,8 +189,8 @@ export const steps: { [key: string]: Step | Substep } = {
                         then slowly feed in the solder wire and try not to exceed the 3 seconds.
                         Do not worry if the Board gets too hot, it is designed to withstand high temperatures. 
                     </p>
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="Step1.2.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="Step1.2.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.2.2.jpg"/>
                     </div>
                 `
@@ -173,38 +210,38 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
         #### Step 1.3
         Start with the first 1k Ohm resistor, color coded Brown, Black, Red.
+
         ![1kOhm](https://www.datocms-assets.com/79069/1666272131-1kohm.png)
         
-            The colored bands on a resistor represents the resistance of your component, and can be read from left to right.
-           
-            The first two or three bands represent single digits. Brown = 1, black = 0, read it from left to right and you get 10.
-            The third or fourth band is a multiplier. Red tells you to multiply by 100: 
-         
-            10 * 100 = 1000.
-            The last band indicates tolerance, with the gold band of this resistor indicating a tolerance of +/- 5% of the resistorvalue. 
-            
-            This resistor is to be placed at the location  labeled R1 1k.
-            Remove the tape at both ends of the resistors leads, bend them and insert the resistor
-            into its designated spot on the circuit board. Orientation is not important.
-            Once the resistor is in place, it helps
-            To slightly bend the leads outwards to hold the component in place.
-            Now solder the resistor using the procedure you learned in Step 1.2
-       
+        The colored bands on a resistor represents the resistance of your component, and can be read from left to right.
+        
+        The first two or three bands represent single digits. Brown = 1, black = 0, read it from left to right and you get 10.
+        The third or fourth band is a multiplier. Red tells you to multiply by 100: 
+        
+        10 * 100 = 1000.
+        The last band indicates tolerance, with the gold band of this resistor indicating a tolerance of +/- 5% of the resistorvalue. 
+        
+        This resistor is to be placed at the location  labeled R1 1k.
+        Remove the tape at both ends of the resistors leads, bend them and insert the resistor
+        into its designated spot on the circuit board. Orientation is not important.
+        Once the resistor is in place, it helps
+        To slightly bend the leads outwards to hold the component in place.
+        Now solder the resistor using the procedure you learned in Step 1.2
         `,
         popups: [
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="Step1.3.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.3.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.3.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.3.4.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.3.5.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.3.6.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.3.7.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.3.8.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin: 0.5rem" src="Step1.3.1.jpg"/>
+                        <img style="margin: 0.5rem" src="Step1.3.2.jpg"/>
+                        <img style="margin: 0.5rem" src="Step1.3.3.jpg"/>
+                        <img style="margin: 0.5rem" src="Step1.3.4.jpg"/>
+                        <img style="margin: 0.5rem" src="Step1.3.5.jpg"/>
+                        <img style="margin: 0.5rem" src="Step1.3.6.jpg"/>
+                        <img style="margin: 0.5rem" src="Step1.3.7.jpg"/>
+                        <img style="margin: 0.5rem" src="Step1.3.8.jpg"/>
                     </div>
                 `
             }
@@ -230,31 +267,31 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
         #### Step 1.3
         Start with the first 1k Ohm resistor, color coded Brown, Black, Red.
+
         ![1kOhm](https://www.datocms-assets.com/79069/1666272131-1kohm.png)
         
-            The colored bands on a resistor represents the resistance of your component, and can be read from left to right.
-           
-            The first two or three bands represent single digits. Brown = 1, black = 0, read it from left to right and you get 10.
-            The third or fourth band is a multiplier. Red tells you to multiply by 100: 
-         
-            10 * 100 = 1000.
-            The last band indicates tolerance, with the gold band of this resistor indicating a tolerance of +/- 5% of the resistorvalue. 
-         
-            This resistor is to be placed at the location  labeled R1 1k.
-            Remove the tape at both ends of the resistors leads, bend them and insert the resistor
-            into its designated spot on the circuit board. Orientation is not important.
-            Once the resistor is in place, it helps
-            To slightly bend the leads outwards to hold the component in place.
-            Now solder the resistor using the procedure you learned in Step 1.2
-       
+        The colored bands on a resistor represents the resistance of your component, and can be read from left to right.
+        
+        The first two or three bands represent single digits. Brown = 1, black = 0, read it from left to right and you get 10.
+        The third or fourth band is a multiplier. Red tells you to multiply by 100: 
+        
+        10 * 100 = 1000.
+        The last band indicates tolerance, with the gold band of this resistor indicating a tolerance of +/- 5% of the resistorvalue. 
+        
+        This resistor is to be placed at the location  labeled R1 1k.
+        Remove the tape at both ends of the resistors leads, bend them and insert the resistor
+        into its designated spot on the circuit board. Orientation is not important.
+        Once the resistor is in place, it helps
+        To slightly bend the leads outwards to hold the component in place.
+        Now solder the resistor using the procedure you learned in Step 1.2
         `,
         popups: [
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="Step1.3.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="Step1.3.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.3.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.3.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.3.4.jpg"/>
@@ -288,13 +325,17 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 1.4
            
         Now let's mount the 10kOhm R2 (Brown-Black-Orange Gold).
-        Place them in the spot labeled R2 10k. 
+        Place them in the spot labeled R2 10k.
+
         ![10kOhm](https://www.datocms-assets.com/79069/1666272137-10kohm.png)
+
         Solder it to the board like you did in the previous step.
     
         You only have one resistor left to solder, and it is R3 1MOhm (Brown, black, green, gold).
-        This resistor occupies the spot labeled R3 1M. 
+        This resistor occupies the spot labeled R3 1M.
+
         ![1MOhm](https://www.datocms-assets.com/79069/1666272134-1mohm.png)
+
         Solder it to the board, cut the legs, and then you can move on to the next step.
         `,
         popups: [
@@ -302,8 +343,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="Step1.4.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="Step1.4.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.4.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.4.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.4.4.jpg"/>
@@ -338,15 +379,14 @@ export const steps: { [key: string]: Step | Substep } = {
         in its spot on the circuit board.
         Once the capacitor is in place, it helps to bend the leads slightly outwards to prevent the component from falling off. 
         Solder the two leads to the board using what you have learned so far.
-      
         `,
         popups: [
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="Step1.5.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="Step1.5.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.5.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.5.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.5.4.jpg"/>
@@ -390,8 +430,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="Step1.6.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="Step1.6.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.6.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.6.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.6.4.jpg"/>
@@ -433,8 +473,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="Step1.7.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="Step1.7.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.7.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.7.3.jpg"/>
                     </div>
@@ -469,8 +509,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
                 contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; max-width: 100%;">
-                        <img src="Step1.8.1.jpg"/>
+                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
+                        <img style="margin-top: 0.5rem" src="Step1.8.1.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.8.2.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.8.3.jpg"/>
                         <img style="margin-top: 0.5rem" src="Step1.8.4.jpg"/>
