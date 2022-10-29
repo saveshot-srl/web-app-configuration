@@ -50,28 +50,63 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Required Tools',
                 icon: 'eyeIcon.png',
                 autoOpen: false,
-                // contentHtml: `
-                //     <p>WHAT YOU NEED TO ASSEMBLE A KIT</p>
-                //     <ul>
-                //     <li>Soldering Iron</li>
-                //     <li>Solder</li>
-                //     <li>Flush Cutter</li>
-                //     <li>Safety Glasses</li>
-                //     <li>Battery</li>
-                //     </ul>
-                //     <img style="margin-top: 0.5rem" src="tools-img.png"/>
-                // `
-                contentMD: `
-                    ## WHAT YOU NEED TO ASSEMBLE A KIT:
+                contentHtml: `
+                <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; max-width: 75vw; margin: 0 1rem">
+                    <div class="tool-img-div">
+                        <div>
+                            <img style="margin-top: 0.5rem" src="tools/tool1.svg"/>
+                            <p>Tool 1</p>
+                        </div>
+                    </div>
+                    <div class="tool-img-div">
+                        <div>
+                            <img style="margin-top: 0.5rem" src="tools/tool2.svg"/>
+                            <p>Tool 2</p>
+                        </div>
+                    </div>
+                    <div class="tool-img-div">
+                        <div>
+                            <img style="margin-top: 0.5rem" src="tools/tool3.svg"/>
+                            <p>Tool 3</p>
+                        </div>
+                    </div>
+                    <div class="tool-img-div">
+                        <div>
+                            <img style="margin-top: 0.5rem" src="tools/tool4.svg"/>
+                            <p>Tool 4</p>
+                        </div>
+                    </div>
+                    <div class="tool-img-div">
+                        <div>
+                            <img style="margin-top: 0.5rem" src="tools/tool5.svg"/>
+                            <p>Tool 5</p>
+                        </div>
+                    </div>
+                    <div class="tool-img-div">
+                        <div>
+                            <img style="margin-top: 0.5rem" src="tools/tool6.svg"/>
+                            <p>Tool 6</p>
+                        </div>
+                    </div>
+                    <div class="tool-img-div">
+                        <div>
+                            <img style="margin-top: 0.5rem" src="tools/tool7.svg"/>
+                            <p>Tool 7</p>
+                        </div>
+                    </div>
+                </div>
+                `,
+                // contentMD: `
+                //     ## WHAT YOU NEED TO ASSEMBLE A KIT:
                     
-                    - Soldering Iron
-                    - Solder
-                    - Flush Cutter
-                    - Safety Glasses
-                    - Battery
+                //     - Soldering Iron
+                //     - Solder
+                //     - Flush Cutter
+                //     - Safety Glasses
+                //     - Battery
 
-                    ![img](tools-img.png)
-                `
+                //     ![img](tools-img.png)
+                // `,
             }
         ],
         hotspots: []
