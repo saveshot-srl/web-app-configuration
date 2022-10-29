@@ -1,6 +1,6 @@
 
 type Content = { contentMD: string } | { contentHtml: string }
-type Popup = Content & { title: string, icon: string, autoOpen?: boolean }
+type Popup = Content & { title: string, icon: string, autoOpen?: boolean, carousel?: string[] }
 type Hotspot = { coordinates: Vector3, delayMs: number, contentHtml: string }
 type Vector3 = { x: number, y: number, z: number }
 type AnimationSlice = { from: number, to: number }
@@ -98,7 +98,7 @@ export const steps: { [key: string]: Step | Substep } = {
                 `,
                 // contentMD: `
                 //     ## WHAT YOU NEED TO ASSEMBLE A KIT:
-                    
+
                 //     - Soldering Iron
                 //     - Solder
                 //     - Flush Cutter
@@ -114,7 +114,7 @@ export const steps: { [key: string]: Step | Substep } = {
     'step1.1': {
         name: '1.1',
         isSubstep: true,
-        contentMD:`
+        contentMD: `
         #### Step 1.1
         Turn your soldering iron on at 400°C (or 763 °F)
         
@@ -153,11 +153,11 @@ export const steps: { [key: string]: Step | Substep } = {
                         then slowly feed in the solder wire and try not to exceed the 3 seconds.
                         Do not worry if the Board gets too hot, it is designed to withstand high temperatures. 
                     </p>
-                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="Step1.2.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.2.2.jpg"/>
-                    </div>
-                `
+                `,
+                carousel: [
+                    "Step1.2.1.jpg",
+                    "Step1.2.2.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: 3, y: 0, z: 0 },
@@ -189,11 +189,11 @@ export const steps: { [key: string]: Step | Substep } = {
                         then slowly feed in the solder wire and try not to exceed the 3 seconds.
                         Do not worry if the Board gets too hot, it is designed to withstand high temperatures. 
                     </p>
-                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="Step1.2.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.2.2.jpg"/>
-                    </div>
-                `
+                `,
+                carousel: [
+                    "Step1.2.1.jpg",
+                    "Step1.2.2.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: 3, y: 0, z: 0 },
@@ -232,18 +232,17 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin: 0.5rem" src="Step1.3.1.jpg"/>
-                        <img style="margin: 0.5rem" src="Step1.3.2.jpg"/>
-                        <img style="margin: 0.5rem" src="Step1.3.3.jpg"/>
-                        <img style="margin: 0.5rem" src="Step1.3.4.jpg"/>
-                        <img style="margin: 0.5rem" src="Step1.3.5.jpg"/>
-                        <img style="margin: 0.5rem" src="Step1.3.6.jpg"/>
-                        <img style="margin: 0.5rem" src="Step1.3.7.jpg"/>
-                        <img style="margin: 0.5rem" src="Step1.3.8.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "Step1.3.1.jpg",
+                    "Step1.3.2.jpg",
+                    "Step1.3.3.jpg",
+                    "Step1.3.4.jpg",
+                    "Step1.3.5.jpg",
+                    "Step1.3.6.jpg",
+                    "Step1.3.7.jpg",
+                    "Step1.3.8.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: 4, y: 0, z: -1 },
@@ -289,18 +288,17 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="Step1.3.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.3.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.3.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.3.4.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.3.5.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.3.6.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.3.7.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.3.8.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "Step1.3.1.jpg",
+                    "Step1.3.2.jpg",
+                    "Step1.3.3.jpg",
+                    "Step1.3.4.jpg",
+                    "Step1.3.5.jpg",
+                    "Step1.3.6.jpg",
+                    "Step1.3.7.jpg",
+                    "Step1.3.8.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: 3, y: 0, z: 1 },
@@ -321,7 +319,7 @@ export const steps: { [key: string]: Step | Substep } = {
     'step1.4': {
         name: '1.4',
         isSubstep: true,
-        contentMD:`
+        contentMD: `
         #### Step 1.4
            
         Now let's mount the 10kOhm R2 (Brown-Black-Orange Gold).
@@ -342,14 +340,13 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="Step1.4.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.4.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.4.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.4.4.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "Step1.4.1.jpg",
+                    "Step1.4.2.jpg",
+                    "Step1.4.3.jpg",
+                    "Step1.4.4.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: 2, y: 0, z: -1.5 },
@@ -370,7 +367,7 @@ export const steps: { [key: string]: Step | Substep } = {
     'step1.5': {
         name: '1.5',
         isSubstep: true,
-        contentMD:`
+        contentMD: `
         #### Step 1.5
       
         Let's move on to your capacitors, the first is a 22pF (picoFarad) yellow capacitor.
@@ -384,15 +381,14 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="Step1.5.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.5.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.5.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.5.4.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.5.5.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "Step1.5.1.jpg",
+                    "Step1.5.2.jpg",
+                    "Step1.5.3.jpg",
+                    "Step1.5.4.jpg",
+                    "Step1.5.5.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: 4, y: 0, z: 1 },
@@ -429,15 +425,14 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="Step1.6.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.6.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.6.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.6.4.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.6.5.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "Step1.6.1.jpg",
+                    "Step1.6.2.jpg",
+                    "Step1.6.3.jpg",
+                    "Step1.6.4.jpg",
+                    "Step1.6.5.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: 4, y: 0, z: 1 },
@@ -472,13 +467,12 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="Step1.7.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.7.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.7.3.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "Step1.7.1.jpg",
+                    "Step1.7.2.jpg",
+                    "Step1.7.3.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: 4, y: 0, z: 1 },
@@ -498,7 +492,7 @@ export const steps: { [key: string]: Step | Substep } = {
     'step1.8': {
         name: '1.8',
         isSubstep: true,
-        contentMD:`
+        contentMD: `
         #### Step 1.8
         
         Congratulations! You have completed your first solder experience.
@@ -508,20 +502,19 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly; flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="Step1.8.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.8.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.8.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.8.4.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.8.5.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.8.6.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.8.7.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.8.8.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.8.9.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step1.8.10.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "Step1.8.1.jpg",
+                    "Step1.8.2.jpg",
+                    "Step1.8.3.jpg",
+                    "Step1.8.4.jpg",
+                    "Step1.8.5.jpg",
+                    "Step1.8.6.jpg",
+                    "Step1.8.7.jpg",
+                    "Step1.8.8.jpg",
+                    "Step1.8.9.jpg",
+                    "Step1.8.10.jpg"
+                ]
             }
         ],
         focalLengthZoomOverride: 70,

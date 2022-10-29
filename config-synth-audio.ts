@@ -1,6 +1,6 @@
 
 export type Content = { contentMD?: string } & { contentHtml?: string }
-export type Popup = Content & { title: string, icon: string, autoOpen?: boolean }
+export type Popup = Content & { title: string, icon: string, autoOpen?: boolean, carousel?: string[] }
 export type Hotspot = { coordinates: Vector3, delayMs: number, contentHtml: string }
 export type Vector3 = { x: number, y: number, z: number }
 export type AnimationSlice = { from: number, to: number }
@@ -82,14 +82,13 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="step4.1.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.1.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.1.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.1.4.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "step4.1.1.jpg",
+                    "step4.1.2.jpg",
+                    "step4.1.3.jpg",
+                    "step4.1.4.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: -3.5, y: 0, z: 2 },
@@ -123,13 +122,12 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="step4.2.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.2.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.2.3.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "step4.2.1.jpg",
+                    "step4.2.2.jpg",
+                    "step4.2.3.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: -3.5, y: 0, z: 1.25 },
@@ -169,13 +167,12 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="step4.3.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.3.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.3.3.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "step4.3.1.jpg",
+                    "step4.3.2.jpg",
+                    "step4.3.3.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: -3.5, y: 0, z: 2 },
@@ -207,14 +204,13 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="step4.4.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.4.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.4.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.4.4.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "step4.4.1.jpg",
+                    "step4.4.2.jpg",
+                    "step4.4.3.jpg",
+                    "step4.4.4.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: -3.5, y: 0, z: 2 },
@@ -249,13 +245,12 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="step4.5.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.5.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.5.3.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "step4.5.1.jpg",
+                    "step4.5.2.jpg",
+                    "step4.5.3.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: -3.5, y: 0, z: 2 },
@@ -288,13 +283,12 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="step4.6.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.6.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step6.3.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "step4.6.1.jpg",
+                    "step4.6.2.jpg",
+                    "step4.6.3.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: -3.5, y: 0, z: 2 },
@@ -331,14 +325,13 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="step4.7.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.7.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.7.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.7.4.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "step4.7.1.jpg",
+                    "step4.7.2.jpg",
+                    "step4.7.3.jpg",
+                    "step4.7.4.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: -3.5, y: 1, z: 2 },
@@ -377,14 +370,13 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="step4.8.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.8.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.8.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.8.4.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "step4.8.1.jpg",
+                    "step4.8.2.jpg",
+                    "step4.8.3.jpg",
+                    "step4.8.4.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: -3.5, y: 0, z: 2 },
@@ -426,17 +418,16 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="step4.9.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.9.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.9.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.9.4.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.9.5.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.9.6.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.9.7.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "step4.9.1.jpg",
+                    "step4.9.2.jpg",
+                    "step4.9.3.jpg",
+                    "step4.9.4.jpg",
+                    "step4.9.5.jpg",
+                    "step4.9.6.jpg",
+                    "step4.9.7.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: 1.5, y: 2.5, z: 2 },
@@ -463,15 +454,14 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="step4.10.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.10.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.10.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.10.4.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.10.5.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "step4.10.1.jpg",
+                    "step4.10.2.jpg",
+                    "step4.10.3.jpg",
+                    "step4.10.4.jpg",
+                    "step4.10.5.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: 1.5, y: 0, z: 2 },
@@ -498,15 +488,14 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="step4.10.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.10.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.10.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.10.4.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.10.5.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "step4.10.1.jpg",
+                    "step4.10.2.jpg",
+                    "step4.10.3.jpg",
+                    "step4.10.4.jpg",
+                    "step4.10.5.jpg"
+                ]
             }
         ],
         focusPointCoordinates: { x: 1.5, y: 0, z: 2 },
@@ -537,19 +526,18 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="step4.11.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.11.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.11.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.11.4.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.11.5.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.11.6.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.11.7.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.11.8.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.11.9.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "step4.11.1.jpg",
+                    "step4.11.2.jpg",
+                    "step4.11.3.jpg",
+                    "step4.11.4.jpg",
+                    "step4.11.5.jpg",
+                    "step4.11.6.jpg",
+                    "step4.11.7.jpg",
+                    "step4.11.8.jpg",
+                    "step4.11.9.jpg"
+                ]
             }
         ],
         focalLengthZoomOverride: 28,
@@ -575,19 +563,18 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="step4.11.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.11.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.11.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.11.4.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.11.5.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.11.6.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.11.7.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.11.8.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.11.9.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "step4.11.1.jpg",
+                    "step4.11.2.jpg",
+                    "step4.11.3.jpg",
+                    "step4.11.4.jpg",
+                    "step4.11.5.jpg",
+                    "step4.11.6.jpg",
+                    "step4.11.7.jpg",
+                    "step4.11.8.jpg",
+                    "step4.11.9.jpg"
+                ]
             }
         ],
         focalLengthZoomOverride: 50,
@@ -612,15 +599,14 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="step4.12.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.12.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.12.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.12.4.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.12.5.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "step4.12.1.jpg",
+                    "step4.12.2.jpg",
+                    "step4.12.3.jpg",
+                    "step4.12.4.jpg",
+                    "step4.12.5.jpg"
+                ]
             }
         ],
         focalLengthZoomOverride: 28,
@@ -645,14 +631,13 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="step4.13.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.13.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.13.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="step4.13.4.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "step4.13.1.jpg",
+                    "step4.13.2.jpg",
+                    "step4.13.3.jpg",
+                    "step4.13.4.jpg"
+                ]
             }
         ],
         focalLengthZoomOverride: 28,
@@ -698,21 +683,20 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Final mount',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="Step5.0.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.4.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.5.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.6.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.7.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.8.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.9.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.10.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.1.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "Step5.0.1.jpg",
+                    "Step5.0.2.jpg",
+                    "Step5.0.3.jpg",
+                    "Step5.0.4.jpg",
+                    "Step5.0.5.jpg",
+                    "Step5.0.6.jpg",
+                    "Step5.0.7.jpg",
+                    "Step5.0.8.jpg",
+                    "Step5.0.9.jpg",
+                    "Step5.0.10.jpg",
+                    "Step5.0.11.jpg"
+                ]
             }
         ],
         focalLengthZoomOverride: 24,
@@ -731,21 +715,20 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Final mount',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="Step5.0.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.4.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.5.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.6.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.7.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.8.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.9.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.10.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.1.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "Step5.0.1.jpg",
+                    "Step5.0.2.jpg",
+                    "Step5.0.3.jpg",
+                    "Step5.0.4.jpg",
+                    "Step5.0.5.jpg",
+                    "Step5.0.6.jpg",
+                    "Step5.0.7.jpg",
+                    "Step5.0.8.jpg",
+                    "Step5.0.9.jpg",
+                    "Step5.0.10.jpg",
+                    "Step5.0.11.jpg"
+                ]
             }
         ],
         focalLengthZoomOverride: 24,
@@ -775,21 +758,20 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Final mount',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="Step5.0.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.4.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.5.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.6.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.7.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.8.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.9.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.10.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step5.0.1.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "Step5.0.1.jpg",
+                    "Step5.0.2.jpg",
+                    "Step5.0.3.jpg",
+                    "Step5.0.4.jpg",
+                    "Step5.0.5.jpg",
+                    "Step5.0.6.jpg",
+                    "Step5.0.7.jpg",
+                    "Step5.0.8.jpg",
+                    "Step5.0.9.jpg",
+                    "Step5.0.10.jpg",
+                    "Step5.0.11.jpg"
+                ]
             }
         ],
         focalLengthZoomOverride: 24,
