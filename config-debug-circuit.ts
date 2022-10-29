@@ -1,6 +1,6 @@
 
 type Content = { contentMD: string } | { contentHtml: string }
-type Popup = Content & { title: string, icon: string, autoOpen?: boolean }
+type Popup = Content & { title: string, icon: string, autoOpen?: boolean, carousel?: string[] }
 type Hotspot = { coordinates: Vector3, delayMs: number, contentHtml: string }
 type Vector3 = { x: number, y: number, z: number }
 type AnimationSlice = { from: number, to: number }
@@ -50,7 +50,9 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 2.1
         
         Take the 1 Kohm R4 resistor (brown, black and red) and mount it on the PCB, flip the board over and solder the resistor to the board.
+        
         ![1kOhm](https://www.datocms-assets.com/79069/1666272131-1kohm.png)
+        
         Now on to the Yellow LED. 
         
         Note that LEDs are polarized components, meaning that the direction of the LED leads matters as current can only flow in one direction. 
@@ -63,20 +65,19 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="Step2.0.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step2.1.2.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step2.1.3.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step2.1.4.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step2.1.5.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step2.1.6.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step2.1.7.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step2.1.8.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step2.1.9.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step2.1.10.jpg"/>
-                    </div>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "Step2.1.1.jpg",
+                    "Step2.1.2.jpg",
+                    "Step2.1.3.jpg",
+                    "Step2.1.4.jpg",
+                    "Step2.1.5.jpg",
+                    "Step2.1.6.jpg",
+                    "Step2.1.7.jpg",
+                    "Step2.1.8.jpg",
+                    "Step2.1.9.jpg",
+                    "Step2.1.10.jpg"
+                ]
             }
         ],
         focalLengthZoomOverride: 50,
@@ -102,12 +103,11 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml: `
-                    <div style="display: flex; justify-content: space-evenly;  flex-wrap: wrap; gap: 3em; max-width: 100%;">
-                        <img style="margin-top: 0.5rem" src="Step2.2.1.jpg"/>
-                        <img style="margin-top: 0.5rem" src="Step2.2.2.jpg"/>
-                    </div>
-                `
+                contentHtml:  ``,
+                carousel: [
+                    "Step2.2.1.jpg",
+                    "Step2.2.2.jpg",
+                ]
             }
         ],
         focalLengthZoomOverride: 70,
