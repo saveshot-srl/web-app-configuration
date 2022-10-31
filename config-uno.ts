@@ -111,7 +111,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1, y: 1, z: -1 },
-                contentHtml: '1Kohm resistors',
+                contentHtml: '1kOhm resistors',
                 delayMs: 15500
             }
         ]
@@ -152,7 +152,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1, y: 1, z: -1 },
-                contentHtml: '10Kohm resistor',
+                contentHtml: '10kOhm resistor',
                 delayMs: 3500
             }
         ]
@@ -192,7 +192,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1, y: 1, z: -1 },
-                contentHtml: '10Kohm resistor',
+                contentHtml: '1MOhm resistor',
                 delayMs: 3500
             }
         ]
@@ -394,7 +394,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1.5, y: 1.5, z: -0.15 },
-                contentHtml: '22pF capacitators',
+                contentHtml: '22pF capacitors',
                 delayMs: 6500
             }
         ]
@@ -602,7 +602,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -3.15, y: 1, z: 1.3 },
-                contentHtml: '47uF capacitators',
+                contentHtml: '47uF capacitors',
                 delayMs: 6500
             }
         ]
@@ -639,7 +639,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -2.25, y: 1.5, z: 0 },
-                contentHtml: '100nF capacitators',
+                contentHtml: '100nF capacitors',
                 delayMs: 17500
             }
         ]
@@ -813,7 +813,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: 0.15, y: 1, z: -0.15 },
-                contentHtml: 'IPCS connector',
+                contentHtml: 'ICSP connector',
                 delayMs: 3500
             }
         ]

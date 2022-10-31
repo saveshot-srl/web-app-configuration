@@ -101,7 +101,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1.2, y: 1, z: 0 },
-                contentHtml: '10ohm resistor',
+                contentHtml: '100kOhm resistor',
                 delayMs: 3500
             }
         ]
@@ -112,7 +112,9 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
         #### Step 4.2
         Now let's mount the 10 Ohm Resistor, that is colour coded brown, black, black.
-        ![10Ohm](https://www.datocms-assets.com/79069/1666272140-10ohm.png)https://www.datocms-assets.com/79069/1666272140-10ohm.png)
+
+        ![10Ohm](https://www.datocms-assets.com/79069/1666272140-10ohm.png)
+
         This resistor goes in R2. 
         Place it in position, then solder it to the board.
            
@@ -140,7 +142,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1.75, y: 1, z: 1 },
-                contentHtml: '10ohm resistor',
+                contentHtml: '10Ohm resistor',
                 delayMs: 3500
             }
         ]
@@ -185,7 +187,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -2.3, y: 1, z: 1.15 },
-                contentHtml: 'IC  amplifier',
+                contentHtml: 'IC amplifier',
                 delayMs: 2500
             }
         ]
@@ -223,7 +225,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1.3, y: 1, z: 1.7 },
-                contentHtml: '47nF capacitator',
+                contentHtml: '47nF capacitor',
                 delayMs: 3500
             }
         ]
@@ -301,7 +303,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -2.9, y: 1, z: 1.15 },
-                contentHtml: '100nF capacitator',
+                contentHtml: '100nF capacitor',
                 delayMs: 3500
             }
         ]
@@ -389,12 +391,12 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1.85, y: 1, z: 0 },
-                contentHtml: '10Kohm trimmers',
+                contentHtml: '10kOhm Potentiometers',
                 delayMs: 11500
             },
             {
                 coordinates: { x: -1.85, y: 1, z: 2.25 },
-                contentHtml: '10Kohm trimmers',
+                contentHtml: '10kOhm Potentiometers',
                 delayMs: 11500
             }
         ]
@@ -709,6 +711,7 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 5.0.1
             Detach the knobs from the potentiometers, and remove the shield from the UNO board.
             Mount the shield to the cardboard face using the screws on the speaker grill.
+
     `,
 
         popups: [
