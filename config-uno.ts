@@ -62,7 +62,6 @@ export const steps: { [key: string]: Step | Substep } = {
                 icon: 'eyeIcon.png',
                 contentHtml: ``,
                 carousel: [
-                    "Step3.0.1.jpg",
                     "Step3.0.2.jpg"
                 ]
             }
@@ -97,7 +96,8 @@ export const steps: { [key: string]: Step | Substep } = {
                     "Step3.1.1.jpg",
                     "Step3.1.2.jpg",
                     "Step3.1.3.jpg",
-                    "Step3.1.4.jpg"
+                    "Step3.1.4.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -108,13 +108,7 @@ export const steps: { [key: string]: Step | Substep } = {
             from: 34,
             to: 49,
         },
-        hotspots: [
-            {
-                coordinates: { x: -1, y: 1, z: -1 },
-                contentHtml: '1Kohm resistors',
-                delayMs: 15500
-            }
-        ]
+        hotspots: []
     },
     'step3.2': {
         name: '3.2',
@@ -138,7 +132,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 contentHtml: ``,
                 carousel: [
                     "Step3.2.1.jpg",
-                    "Step3.2.2.jpg"
+                    "Step3.2.2.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -149,13 +144,7 @@ export const steps: { [key: string]: Step | Substep } = {
             from: 49,
             to: 52,
         },
-        hotspots: [
-            {
-                coordinates: { x: -1, y: 1, z: -1 },
-                contentHtml: '10Kohm resistor',
-                delayMs: 3500
-            }
-        ]
+        hotspots: []
     },
     'step3.3': {
         name: '3.3',
@@ -189,13 +178,7 @@ export const steps: { [key: string]: Step | Substep } = {
             from: 52,
             to: 55,
         },
-        hotspots: [
-            {
-                coordinates: { x: -1, y: 1, z: -1 },
-                contentHtml: '10Kohm resistor',
-                delayMs: 3500
-            }
-        ]
+        hotspots: []
     },
     'step3.4': {
         name: '3.4',
@@ -204,6 +187,8 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.4
         
         Now we solder the D1 Diode. This is, like an LED, a polarized component. 
+
+        ![img](components/diode.png)
         
         The Diode has a white band, line up the white band on the component with the white mark on the PCB and solder it to the board.
         
@@ -285,6 +270,9 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.6
         
         Now for the LEDs LD2, LD3, LD4 which should be yellow. Note the direction of the LED leads does matter.
+        
+        ![img](components/yellow-led.jpg)
+
         The long leg is known as the Anode and is the positive (+) lead.
         The short leg is known as the Cathode and is the negative (-) lead.
         Put the LEDs through the holes marked LD2, LD3, LD4.
@@ -328,6 +316,9 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.7
         
         Now for the green LED, going in slot LD5. Grab the LED and put the leads through the holes marked LD5.
+        
+        ![img](components/green-led.jpg)
+
         Then solder the LED to the board.
         
         ![img](new-images/step3/uno3.7.1.jpg)
@@ -339,7 +330,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 contentHtml: ``,
                 carousel: [
                     "Step3.7.1.jpg",
-                    "Step3.7.2.jpg"
+                    "Step3.7.2.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -365,6 +357,9 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.8
         
         Now let's move on to your capacitors, they are 22pF yellow capacitors.
+        
+        ![img](components/capacitor1.png)
+
         These capacitors go in the positions on the board labeled C4 and C5.
         Solder the capacitors to the board.
         
@@ -380,7 +375,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 carousel: [
                     "Step3.8.1.jpg",
                     "Step3.8.2.jpg",
-                    "Step3.8.3.jpg"
+                    "Step3.8.3.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -460,7 +456,9 @@ export const steps: { [key: string]: Step | Substep } = {
                 carousel: [
                     "Step3.10.1.jpg",
                     "Step3.10.2.jpg",
-                    "Step3.10.3.jpg"
+                    "Step3.10.3.jpg",
+                    "new-images/step3/uno3.10.3.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -503,7 +501,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 carousel: [
                     "Step3.11.1.jpg",
                     "Step3.11.2.jpg",
-                    "Step3.11.3.jpg"
+                    "Step3.11.4.jpg",
+                    "Step3.11.6.jpg"
                 ]
             }
         ],
@@ -572,7 +571,11 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
         #### Step 3.13
         
-        We can now mount the electrolytic capacitors that go in C6 & C7. These capacitors are polarized (47uF / 25V), The negative side is indicated by a white stripe on the body of the capacitor.
+        We can now mount the electrolytic capacitors that go in C6 & C7. These capacitors are polarized (47uF / 25V).
+        
+        ![img](components/capacitor5.png)
+        
+        The negative side is indicated by a white stripe on the body of the capacitor.
         Correctly orient them using the indication on the body, and then solder them to the board.
         
         ![img](new-images/step3/uno3.13.1.jpg)
@@ -584,11 +587,15 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml:``,
+                contentHtml: ``,
                 carousel: [
                     "Step3.13.1.jpg",
+                    "new-images/step3/uno3.13.1.jpg",
+                    "new-images/step3/uno3.13.2.jpg",
                     "Step3.13.2.jpg",
-                    "Step3.13.3.jpg"
+                    "new-images/step3/uno3.13.3.jpg",
+                    "new-images/step3/uno3.13.4.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -613,6 +620,9 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
         #### Step 3.14
         Now we can mount the blue 100nF capacitors.
+        
+        ![img](components/capacitor3.png)
+
         These capacitors go in the positions on the board marked C8, C9, C10, C11, C12, C13.
         Solder them to the board.
         
@@ -625,7 +635,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 contentHtml: ``,
                 carousel: [
                     "Step3.14.1.jpg",
-                    "Step3.14.2.jpg"
+                    "Step3.14.2.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -667,7 +678,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 carousel: [
                     "Step3.15.1.jpg",
                     "Step3.15.2.jpg",
-                    "Step3.15.3.jpg"
+                    "Step3.15.3.jpg",
+                    "new-images/step3/uno3.15.5.jpg"
                 ]
             }
         ],
@@ -693,7 +705,7 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.16
         Now we can solder the socket for the ATMEGA328P, that goes in the position marked U1.
         
-        ![img](new-images/step3/U1.png)
+        ![img](new-images/step3/U1.jpg)
 
         Push it in place then solder the legs one by one. 
         
@@ -710,7 +722,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 carousel: [
                     "Step3.16.1.jpg",
                     "Step3.16.2.jpg",
-                    "Step3.16.3.jpg"
+                    "Step3.16.3.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -799,7 +812,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 carousel: [
                     "Step3.18.1.jpg",
                     "Step3.18.2.jpg",
-                    "Step3.18.3.jpg"
+                    "Step3.18.3.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -836,7 +850,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 carousel: [
                     "Step3.19.1.jpg",
                     "Step3.19.2.jpg",
-                    "Step3.19.3.jpg"
+                    "Step3.19.3.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -862,6 +877,8 @@ export const steps: { [key: string]: Step | Substep } = {
         #### Step 3.20
         Lastly, we can insert the ATMEGA328P microcontroller into the socket into the socket mounted just a few steps ago. This is the brain of your board and it is important it is mounted in the right direction. 
         
+        ![img](new-images/step3/ATMEGA328P.png)
+
         The direction of the microcontroller is indicated by a semi-circle on one end of the component. Orient it so the semi-circle faces away from the board.
         
         ![img](new-images/step3/uno3.20.1.jpg)

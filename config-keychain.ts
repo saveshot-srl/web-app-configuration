@@ -116,7 +116,7 @@ export const steps: { [key: string]: Step | Substep } = {
         isSubstep: true,
         contentMD: `
         #### Step 1.1
-        Turn your soldering iron on at 400°C (or 763 °F)
+        Turn your soldering iron on at 350>400°C (or 662>763 °F)
         
         ![img](new-images/step1/keychain1.1.1.jpg)
         ![img](new-images/step1/keychain1.1.2.jpg)
@@ -127,7 +127,18 @@ export const steps: { [key: string]: Step | Substep } = {
         animation: {
             from: 0,
             to: 0,
-        },
+        }, popups: [
+            {
+                title: 'Required Tools',
+                icon: 'eyeIcon.png',
+                autoOpen: false,
+                contentHtml: ``,
+                carousel: [
+                    "new-images/step1/keychain1.1.1.jpg",
+                    "new-images/step1/keychain1.1.2.jpg"
+                ]
+            }
+        ]
     },
     'step1.2': {
         name: '1.2',
@@ -156,7 +167,10 @@ export const steps: { [key: string]: Step | Substep } = {
                 `,
                 carousel: [
                     "Step1.2.1.jpg",
-                    "Step1.2.2.jpg"
+                    "Step1.2.2.jpg",
+                    "new-images/step1/keychain1.2.1.jpg",
+                    "new-images/step1/keychain1.2.2.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -165,43 +179,7 @@ export const steps: { [key: string]: Step | Substep } = {
         focalLengthZoomOverride: 60,
         animation: {
             from: 0,
-            to: 0,
-        },
-    },
-    'step1.2.1': {
-        name: '1.2.1',
-        isSubstep: true,
-        contentHtml: `
-            <h4>Step 1.2.1</h4>
-            <p> On the right side of your board we have
-            designed a test sheet for your first solder.
-            Dissolve some lead with iron. </p>
-        `,
-        popups: [
-            {
-                title: 'How to Solder',
-                icon: 'eyeIcon.png',
-                contentHtml: `
-                    <p>
-                        Melt a tiny bit of solder wire on the iron's tip.
-                        <br/>
-                        Place the the tip of the soldering iron on the hole of the Board for a couple seconds,
-                        then slowly feed in the solder wire and try not to exceed the 3 seconds.
-                        Do not worry if the Board gets too hot, it is designed to withstand high temperatures. 
-                    </p>
-                `,
-                carousel: [
-                    "Step1.2.1.jpg",
-                    "Step1.2.2.jpg"
-                ]
-            }
-        ],
-        focusPointCoordinates: { x: 3, y: 0, z: 0 },
-        animationPatterns: ['Animation'],
-        focalLengthZoomOverride: 60,
-        animation: {
-            from: 0,
-            to: 1,
+            to: 1
         },
     },
     'step1.3': {
@@ -308,13 +286,7 @@ export const steps: { [key: string]: Step | Substep } = {
             from: 2,
             to: 9.042,
         },
-        hotspots: [
-            {
-                coordinates: { x: 3, y: 0, z: 0.5 },
-                contentHtml: '1Kohm resistor',
-                delayMs: 9500
-            }
-        ]
+        hotspots: []
     },
     'step1.4': {
         name: '1.4',
@@ -345,7 +317,8 @@ export const steps: { [key: string]: Step | Substep } = {
                     "Step1.4.1.jpg",
                     "Step1.4.2.jpg",
                     "Step1.4.3.jpg",
-                    "Step1.4.4.jpg"
+                    "Step1.4.4.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -357,11 +330,6 @@ export const steps: { [key: string]: Step | Substep } = {
             to: 15,
         },
         hotspots: [
-            {
-                coordinates: { x: 4, y: 1, z: 0.5 },
-                contentHtml: '10Kohm resistor',
-                delayMs: 5500
-            }
         ]
     },
     'step1.5': {
@@ -369,6 +337,8 @@ export const steps: { [key: string]: Step | Substep } = {
         isSubstep: true,
         contentMD: `
         #### Step 1.5
+        
+        ![img](components/capacitor1.png)
       
         Let's move on to your capacitors, the first is a 22pF (picoFarad) yellow capacitor.
         This capacitor goes to the place on the board labeled C1 22pF.
@@ -410,6 +380,9 @@ export const steps: { [key: string]: Step | Substep } = {
         isSubstep: true,
         contentMD: ` 
         #### Step 1.6
+        
+        ![img](components/capacitor2.png)
+      
         Let's now solder our first electrolytic capacitor C2. This capacitor is polarized (47uF/25V), meaning that 
         the direction you place it in matters.
         
@@ -454,6 +427,8 @@ export const steps: { [key: string]: Step | Substep } = {
         isSubstep: true,
         contentMD: `
         #### Step 1.7
+        
+        ![img](components/capacitor3.png)
         
         We can now solder the second 100nF (nanoFarad) capacitor, which is blue.
         This capacitor goes to the place on the board labeled C3 100nF.
@@ -504,12 +479,6 @@ export const steps: { [key: string]: Step | Substep } = {
                 icon: 'eyeIcon.png',
                 contentHtml: ``,
                 carousel: [
-                    "Step1.8.1.jpg",
-                    "Step1.8.2.jpg",
-                    "Step1.8.3.jpg",
-                    "Step1.8.4.jpg",
-                    "Step1.8.5.jpg",
-                    "Step1.8.6.jpg",
                     "Step1.8.7.jpg",
                     "Step1.8.8.jpg",
                     "Step1.8.9.jpg",
