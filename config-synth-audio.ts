@@ -57,9 +57,11 @@ export const steps: { [key: string]: Step | Substep } = {
                 title: 'Components',
                 icon: 'eyeIcon.png',
                 autoOpen: true,
-                contentHtml: `
-                    <img style="margin-top: 0.5rem" src="Step4.0.1.jpg"/>
-                `
+                contentHtml: ``,
+                carousel: [
+                    "Step4.0.1.jpg",
+                    "solder-cleaning.jpg"
+                ]
             }
         ],
         hotspots: []
@@ -87,7 +89,8 @@ export const steps: { [key: string]: Step | Substep } = {
                     "step4.1.1.jpg",
                     "step4.1.2.jpg",
                     "step4.1.3.jpg",
-                    "step4.1.4.jpg"
+                    "step4.1.4.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -101,7 +104,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1.2, y: 1, z: 0 },
-                contentHtml: '10ohm resistor',
+                contentHtml: '100Kohm resistor',
                 delayMs: 3500
             }
         ]
@@ -112,7 +115,9 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
         #### Step 4.2
         Now let's mount the 10 Ohm Resistor, that is colour coded brown, black, black.
-        ![10Ohm](https://www.datocms-assets.com/79069/1666272140-10ohm.png)https://www.datocms-assets.com/79069/1666272140-10ohm.png)
+
+        ![10Ohm](https://www.datocms-assets.com/79069/1666272140-10ohm.png)
+
         This resistor goes in R2. 
         Place it in position, then solder it to the board.
            
@@ -126,7 +131,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 carousel: [
                     "step4.2.1.jpg",
                     "step4.2.2.jpg",
-                    "step4.2.3.jpg"
+                    "step4.2.3.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -170,8 +176,10 @@ export const steps: { [key: string]: Step | Substep } = {
                 contentHtml: ``,
                 carousel: [
                     "step4.3.1.jpg",
+                    "new-images/step4/U1.png",
                     "step4.3.2.jpg",
-                    "step4.3.3.jpg"
+                    "step4.3.3.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -196,6 +204,9 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
         #### Step 4.4
             Grab your yellow 47 nF capacitor, and place it in C1.
+        
+            ![img](components/capacitor1.png)
+          
             Solder it to the board and cut the legs.
            
             ![img](new-images/step4/audio4.4.1.jpg)
@@ -209,7 +220,8 @@ export const steps: { [key: string]: Step | Substep } = {
                     "step4.4.1.jpg",
                     "step4.4.2.jpg",
                     "step4.4.3.jpg",
-                    "step4.4.4.jpg"
+                    "step4.4.4.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -235,6 +247,9 @@ export const steps: { [key: string]: Step | Substep } = {
             #### Step 4.5
             
             Now grab the smaller of the electrolytic capacitors (47uF / 25V) and place it in C2. 
+        
+            ![img](components/capacitor5.png)
+          
             This component is polarized, identify the negative side by the white stripe on the side of the capacitor, and insert it into the hole labelled with a -.
             You can also identify the negative side by its shorter leg. 
             Solder it to the board and cut the legs.
@@ -249,7 +264,8 @@ export const steps: { [key: string]: Step | Substep } = {
                 carousel: [
                     "step4.5.1.jpg",
                     "step4.5.2.jpg",
-                    "step4.5.3.jpg"
+                    "step4.5.3.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -275,6 +291,9 @@ export const steps: { [key: string]: Step | Substep } = {
             #### Step 4.6
         
             Grab the blue 100 nF capacitor and place it in C3.
+        
+            ![img](components/capacitor3.png)
+          
             Solder it to the board and cut the legs.
            
             ![img](new-images/step4/audio4.6.1.jpg)
@@ -313,6 +332,9 @@ export const steps: { [key: string]: Step | Substep } = {
             #### Step 4.7
         
                 Now let's mount the larger of the electrolytic capacitors (220µf/25V). 
+        
+                ![img](components/capacitor5.png)
+              
                 Follow the same procedure as the smaller electrolytic capacitor to identify the negative side, as this capacitor also is polarized. 
                 Once this capacitor is soldered to the board you will want to bend it flush to the PCB. 
                 So don't push the component through all the way down to the board, but leave enough of the legs to be able to bend. 
@@ -330,7 +352,8 @@ export const steps: { [key: string]: Step | Substep } = {
                     "step4.7.1.jpg",
                     "step4.7.2.jpg",
                     "step4.7.3.jpg",
-                    "step4.7.4.jpg"
+                    "step4.7.4.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -358,7 +381,8 @@ export const steps: { [key: string]: Step | Substep } = {
             Let's now position the potentiometers, a potentiometer can be thought of as a variable resistor. If you turn 
             the shaft on this potentiometer all the way it has a resistance of 10kOhm.
             These potentiometers go in R3, R4, R5, R6, R7, R8.
-            
+        
+          
             Put them in position, flip the PCB and solder them to the board.
             You may find it easier to keep them in place if you solder each potentiometer to the board before you put the next one in position.
            
@@ -425,8 +449,7 @@ export const steps: { [key: string]: Step | Substep } = {
                     "step4.9.3.jpg",
                     "step4.9.4.jpg",
                     "step4.9.5.jpg",
-                    "step4.9.6.jpg",
-                    "step4.9.7.jpg"
+                    "step4.9.6.jpg"
                 ]
             }
         ],
@@ -459,8 +482,9 @@ export const steps: { [key: string]: Step | Substep } = {
                     "step4.10.1.jpg",
                     "step4.10.2.jpg",
                     "step4.10.3.jpg",
-                    "step4.10.4.jpg",
-                    "step4.10.5.jpg"
+                    "step4.10.4.png",
+                    "step4.10.5.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -493,8 +517,9 @@ export const steps: { [key: string]: Step | Substep } = {
                     "step4.10.1.jpg",
                     "step4.10.2.jpg",
                     "step4.10.3.jpg",
-                    "step4.10.4.jpg",
-                    "step4.10.5.jpg"
+                    "step4.10.4.png",
+                    "step4.10.5.jpg",
+                    "solder-cleaning.jpg"
                 ]
             }
         ],
@@ -565,14 +590,6 @@ export const steps: { [key: string]: Step | Substep } = {
                 icon: 'eyeIcon.png',
                 contentHtml: ``,
                 carousel: [
-                    "step4.11.1.jpg",
-                    "step4.11.2.jpg",
-                    "step4.11.3.jpg",
-                    "step4.11.4.jpg",
-                    "step4.11.5.jpg",
-                    "step4.11.6.jpg",
-                    "step4.11.7.jpg",
-                    "step4.11.8.jpg",
                     "step4.11.9.jpg"
                 ]
             }
@@ -760,12 +777,6 @@ export const steps: { [key: string]: Step | Substep } = {
                 icon: 'eyeIcon.png',
                 contentHtml: ``,
                 carousel: [
-                    "Step5.0.1.jpg",
-                    "Step5.0.2.jpg",
-                    "Step5.0.3.jpg",
-                    "Step5.0.4.jpg",
-                    "Step5.0.5.jpg",
-                    "Step5.0.6.jpg",
                     "Step5.0.7.jpg",
                     "Step5.0.8.jpg",
                     "Step5.0.9.jpg",
