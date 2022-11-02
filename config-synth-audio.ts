@@ -104,7 +104,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1.2, y: 1, z: 0 },
-                contentHtml: '100Kohm resistor',
+                contentHtml: '100 kohm resistor',
                 delayMs: 3500
             }
         ]
