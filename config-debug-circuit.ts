@@ -24,8 +24,10 @@ export const steps: { [key: string]: Step | Substep } = {
     "step2": {
         name: 'Create a Debug circuit',
         isSubstep: false,
-        contentMD:`
+        contentMD: `
         #### Step 2.0
+
+        ![img](components/yellow-led.jpg)
         
         You can now solder your first debug circuit. This PCB is equipped with a resistor, a LED and a pair of cables.
         
@@ -46,7 +48,7 @@ export const steps: { [key: string]: Step | Substep } = {
     'step2.1': {
         name: '2.1',
         isSubstep: true,
-        contentMD:`
+        contentMD: `
         #### Step 2.1
         
         Take the 1 Kohm R4 resistor (brown, black and red) and mount it on the PCB, flip the board over and solder the resistor to the board.
@@ -57,6 +59,8 @@ export const steps: { [key: string]: Step | Substep } = {
         
         Note that LEDs are polarized components, meaning that the direction of the LED leads matters as current can only flow in one direction. 
         The long leg is known as the Anode and is the positive (+) lead. The short leg is known as the Cathode and is the negative (-) lead. Put the LED leads through the holes marked LD1, and solder them to the board.
+        
+        ![img](components/yellow-led.jpg)
        
         Now Solder the cables, insert the red cable in the label + and solder. Then solder the black cable to the hole labelled -.
         If you're having a hard time getting the cables through the holes in the pcb you may find it helpful to twist the tip of the cable before trying to insert it. 
@@ -75,8 +79,7 @@ export const steps: { [key: string]: Step | Substep } = {
                     "Step2.1.6.jpg",
                     "Step2.1.7.jpg",
                     "Step2.1.8.jpg",
-                    "Step2.1.9.jpg",
-                    "Step2.1.10.jpg"
+                    "Step2.1.9.jpg"
                 ]
             }
         ],
@@ -92,7 +95,7 @@ export const steps: { [key: string]: Step | Substep } = {
     'step2.2': {
         name: '2.2',
         isSubstep: true,
-        contentMD:`
+        contentMD: `
         #### Step 2.2
         Well done! 
         You have now completed your debug circuit, you can detach the board by twisting the PCB.
@@ -103,10 +106,11 @@ export const steps: { [key: string]: Step | Substep } = {
             {
                 title: 'Step by Step',
                 icon: 'eyeIcon.png',
-                contentHtml:  ``,
+                contentHtml: ``,
                 carousel: [
                     "Step2.2.1.jpg",
                     "Step2.2.2.jpg",
+                    "Step2.2.3.jpg"
                 ]
             }
         ],
