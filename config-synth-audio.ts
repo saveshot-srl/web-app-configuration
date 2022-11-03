@@ -104,7 +104,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1.2, y: 1, z: 0 },
-                contentHtml: '100 kohm resistor',
+                contentHtml: '100 kOhm resistor',
                 delayMs: 3500
             }
         ]
@@ -146,7 +146,7 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1.75, y: 1, z: 1 },
-                contentHtml: '10ohm resistor',
+                contentHtml: '10Ohm resistor',
                 delayMs: 3500
             }
         ]
@@ -413,12 +413,12 @@ export const steps: { [key: string]: Step | Substep } = {
         hotspots: [
             {
                 coordinates: { x: -1.85, y: 1, z: 0 },
-                contentHtml: '10Kohm trimmers',
+                contentHtml: '10 kOhm trimmers',
                 delayMs: 11500
             },
             {
                 coordinates: { x: -1.85, y: 1, z: 2.25 },
-                contentHtml: '10Kohm trimmers',
+                contentHtml: '10 kOhm trimmers',
                 delayMs: 11500
             }
         ]

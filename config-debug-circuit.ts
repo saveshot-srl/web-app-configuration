@@ -51,7 +51,7 @@ export const steps: { [key: string]: Step | Substep } = {
         contentMD: `
         #### Step 2.1
         
-        Take the 1 Kohm R4 resistor (brown, black and red) and mount it on the PCB, flip the board over and solder the resistor to the board.
+        Take the 1 kOhm R4 resistor (brown, black and red) and mount it on the PCB, flip the board over and solder the resistor to the board.
         
         ![1kOhm](https://www.datocms-assets.com/79069/1666272131-1kohm.png)
         
